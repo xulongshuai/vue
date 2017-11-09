@@ -1,0 +1,1753 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body class="zhi " style="">
+
+<div role="navigation" class="zu-top" data-za-module="TopNavBar">
+<div class="zg-wrap modal-shifting clearfix" id="zh-top-inner">
+<a href="/" class="zu-top-link-logo" id="zh-top-link-logo" data-za-c="view_home" data-za-a="visit_home" data-za-l="top_navigation_zhihu_logo">知乎</a>
+
+
+
+<button class="zu-top-add-question" id="zu-top-add-question">提问</button>
+
+
+<div role="search" id="zh-top-search" class="zu-top-search">
+<form method="GET" action="/search" id="zh-top-search-form" class="zu-top-search-form">
+
+
+
+<input type="hidden" name="type" value="content">
+<label for="q" class="hide-text">知乎搜索</label><input type="text" class="zu-top-search-input" id="q" name="q" autocomplete="off" value="" maxlength="100" placeholder="搜索你感兴趣的内容..." role="combobox" aria-autocomplete="list">
+<button type="submit" class="zu-top-search-button"><span class="hide-text">搜索</span><span class="sprite-global-icon-magnifier-light"></span></button>
+</form>
+</div>
+
+
+
+</div>
+</div>
+
+<div id="zg-top-nav" class="zu-top-nav">
+<ul class="zu-top-nav-ul zg-clear">
+
+<li class="zu-top-nav-li current" id="zh-top-nav-home">
+<a class="zu-top-nav-link" href="/" id="zh-top-link-home" data-za-c="view_home" data-za-a="visit_home" data-za-l="top_navigation_home">首页</a>
+</li>
+
+
+
+<li class="top-nav-topic-selector zu-top-nav-li " id="zh-top-nav-topic">
+<a class="zu-top-nav-link" href="/topic" id="top-nav-dd-topic">话题</a>
+</li>
+
+<li class="zu-top-nav-li " id="zh-top-nav-explore">
+<a class="zu-top-nav-link" href="/explore">发现</a>
+</li>
+
+<li class="top-nav-noti zu-top-nav-li ">
+<a class="zu-top-nav-link" href="javascript:;" id="zh-top-nav-count-wrap" role="button"><span class="mobi-arrow"></span>消息<span id="zh-top-nav-count" class="zu-top-nav-count zg-noti-number" style="display: none;">0</span></a>
+</li>
+
+
+
+<li class="zu-top-nav-li">
+<a id="js-top-nav-link-profile" class="zu-top-nav-link" href="javascript:;">
+我<span class="mobi-arrow"></span>
+</a>
+<span id="zh-top-nav-pm-count" class="zu-top-nav-pm-count zg-noti-number" style="visibility:hidden" data-count="0">
+
+</span>
+</li>
+
+</ul>
+<div class="zu-top-nav-live zu-noti7-popup zg-r5px no-hovercard" id="zh-top-nav-live-new" role="popup" tabindex="0">
+<div class="zu-top-nav-live-inner zg-r5px">
+<div class="zu-top-live-icon">&nbsp;</div>
+<div class="zu-home-noti-inner" id="zh-top-nav-live-new-inner">
+<div class="zm-noti7-popup-tab-container clearfix" tabindex="0" role="tablist">
+<button class="zm-noti7-popup-tab-item message" role="tab">
+<span class="icon">消息</span>
+</button>
+<button class="zm-noti7-popup-tab-item user" role="tab">
+<span class="icon">用户</span>
+</button>
+<button class="zm-noti7-popup-tab-item thanks" role="tab">
+<span class="icon">赞同和感谢</span>
+</button>
+</div>
+</div>
+<div class="zm-noti7-frame-border top"></div>
+<div class="zm-noti7-frame">
+<div class="zm-noti7-content message">
+<div class="zm-noti7-content-inner">
+<div class="zm-noti7-content-body">
+<div class="zm-noti7-popup-loading">
+<span class="noti-spinner-loading"></span>
+</div>
+</div>
+</div>
+</div>
+<div class="zm-noti7-content user" style="display:none;">
+<div class="zm-noti7-content-inner">
+<div class="zm-noti7-content-body">
+<div class="zm-noti7-popup-loading">
+<span class="noti-spinner-loading"></span>
+</div>
+</div>
+</div>
+</div>
+<div class="zm-noti7-content thanks" style="display:none;">
+<div class="zm-noti7-content-inner">
+<div class="zm-noti7-content-body">
+<div class="zm-noti7-popup-loading">
+<span class="noti-spinner-loading"></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="zm-noti7-frame-border bottom"></div>
+<div class="zm-noti7-popup-footer">
+<a href="/notifications" class="zm-noti7-popup-footer-all zg-right">查看全部 »</a>
+<a href="/settings/notification" class="zm-noti7-popup-footer-set" title="通知设置"><i class="zg-icon zg-icon-settings"></i></a>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="mobile-top-nav-profile-popup" class="mobile-top-nav-popup mobile-top-nav-popup-profile">
+<ul class="top-nav-dropdown" id="top-nav-profile-dropdown">
+<li>
+<a href="/people/shan-nian-13">
+<i class="zg-icon zg-icon-dd-home"></i>我的主页
+</a>
+</li>
+
+<li>
+<a href="/inbox">
+<i class="zg-icon zg-icon-dd-pm"></i>私信
+<span id="zh-top-nav-pm-count" class="zu-top-nav-pm-count zg-noti-number" style="visibility:hidden" data-count="0">
+
+</span>
+</a>
+</li>
+<li>
+<a href="/settings">
+<i class="zg-icon zg-icon-dd-settings"></i>设置
+</a>
+</li>
+<li>
+<a href="/logout">
+<i class="zg-icon zg-icon-dd-logout"></i>退出
+</a>
+</li>
+</ul>
+
+<button class="slide-up"></button>
+</div>
+
+
+<div class="zu-global-notify" id="zh-global-message" style="display:none">
+<div class="zg-wrap">
+<div class="zu-global-nitify-inner">
+<a class="zu-global-notify-close" href="javascript:;" title="关闭" name="close">x</a>
+<span class="zu-global-notify-icon"></span>
+<span class="zu-global-notify-msg"></span>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<div class="zg-wrap zu-main clearfix " role="main">
+<div class="zu-main-content">
+<div class="zu-main-content-inner">
+
+
+
+
+<div class="HomeEntry" data-za-module="HomeEntry">
+<div class="HomeEntry-avatar">
+<img class="Avatar Avatar--xs" src="https://pic1.zhimg.com/da8e974dc_xs.jpg" srcset="https://pic1.zhimg.com/da8e974dc_l.jpg 2x" alt="闪念">
+</div>
+<div class="HomeEntry-box">
+<span class="HomeEntry-boxArrow"></span>
+<ul class="HomeEntry-list">
+<li class="HomeEntry-item">
+<a href="#" class="HomeEntry-ask js-HomeEntry-ask">
+<i class="sprite-home-question-off"></i>
+提问
+</a>
+</li>
+<li class="HomeEntry-item">
+<a href="/question" target="_blank" class="HomeEntry-answer js-HomeEntry-answer">
+<i class="sprite-home-answer-off"></i>
+回答
+</a>
+</li>
+<li class="HomeEntry-item">
+<a href="//zhuanlan.zhihu.com/write" target="_blank" class="HomeEntry-post js-HomeEntry-post">
+<i class="sprite-home-post-off"></i>
+写文章
+</a>
+</li>
+</ul>
+<div class="HomeEntry-draft">
+<a href="/draft" target="_blank">
+草稿 
+</a>
+</div>
+</div>
+</div>
+
+<div class="zg-section" id="zh-home-list-title">
+<i class="zg-icon zg-icon-feedlist"></i>
+最新动态 <input type="hidden" id="is-topstory">
+<span class="zg-right zm-noti-cleaner-setting" style="list-style:none"><a href="/settings/filter" class="zg-link-gray-normal"><i class="zg-icon zg-icon-settings"></i>设置</a></span>
+</div>
+<div class="zu-main-feed-con navigable" data-feedtype="topstory" id="zh-question-list" data-widget="navigable" data-navigable-options="{&quot;items&quot;:&quot;> .zh-general-list .feed-content&quot;,&quot;offsetTop&quot;:-82}">
+<a href="javascript:;" class="zu-main-feed-fresh-button" id="zh-main-feed-fresh-button" style="display:none"></a>
+<div id="js-home-feed-list" class="zh-general-list topstory clearfix" data-init="{&quot;params&quot;: {}, &quot;nodename&quot;: &quot;TopStory2FeedList&quot;}" data-za-module="TopStoryFeedList">
+
+
+<div class="feed-item folding feed-item-hook feed-item-0
+ 
+" feed-item-p="" data-type="p" id="feed-0" data-za-module="FeedItem" data-za-index="">
+<meta itemprop="ZReactor" data-id="4522606" data-meta="{&quot;source_type&quot;: &quot;topic_acknowledged_article&quot;, &quot;voteups&quot;: 31, &quot;comments&quot;: 24, &quot;source&quot;: [[&quot;topic&quot;, 19800], [&quot;topic&quot;, 395]]}">
+<div class="feed-item-inner">
+<div class="avatar">
+<a title="金融" data-hovercard="t$t$19609455" class="zm-item-link-avatar" href="/topic/19609455" target="_blank">
+<img src="https://pic2.zhimg.com/ca0657b5e0ef154ee25c3e357a6c607d_m.jpg" alt="金融" class="side-topic-avatar">
+</a>
+</div>
+<div class="feed-main">
+<div class="feed-source" data-za-module="FeedSource">
+来自话题: <a href="/topic/19609455" data-hovercard="t$b$19609455" data-token="19609455" data-topicid="19800" data-follow="1" data-interest="1" target="_blank" data-za-element-name="Title">金融</a>、<a href="/topic/19551404" data-hovercard="t$b$19551404" data-token="19551404" data-topicid="395" data-follow="1" data-interest="1" target="_blank" data-za-element-name="Title">投资</a>
+
+</div>
+<div class="feed-content" data-za-module="PostItem" data-za-index="">
+<meta itemprop="post-id" content="4522606">
+<meta itemprop="post-url-token" content="30835287">
+<h2 class="feed-title"><a target="_blank" class="post-link" href="https://zhuanlan.zhihu.com/p/30835287" data-za-element-name="Title">甲亏50%时乙抄底，甲亏90%时乙亏多少？</a></h2>
+
+<div class="entry-body post-body js-collapse-body">
+
+
+
+<div class="author-info summary-wrapper">
+<span class="author-link-line">
+<a href="/people/luoyuanshang" data-hovercard="p$t$luoyuanshang" class="name author-link">罗元裳</a></span><span title="创办独立顾问服务，7分钟理财CEO" class="bio">
+创办独立顾问服务，7分钟理财CEO
+</span>
+</div>
+
+<div class="zm-item-vote-info" data-votecount="31" data-za-module="VoteInfo">
+
+
+
+<span class="voters text"><a href="#" class="more text"><span class="js-voteCount">31</span>&nbsp;人赞</a></span>
+
+
+</div>
+<div class="post-content" data-author-name="罗元裳" data-entry-url="https://zhuanlan.zhihu.com/p/30835287">
+<textarea class="content hidden">&lt;p&gt;昨天我碰到一个很有意思的问题，题主咨询，“甲亏50%时乙抄底，甲亏90%时乙亏多少？”，看起来是个数学计算题，但结论对大家有用，分享给大家。&lt;/p&gt;&lt;p&gt;乙亏损多少分情况：甲乙都没借钱炒股；甲借钱炒股，乙没有借钱炒股；甲乙都借钱炒股；另外还需看投资比例问题。&lt;/p&gt;&lt;p&gt;&lt;b&gt;一、如果甲买的是股票，并且甲乙双方不存在借钱炒股情况。&lt;/b&gt;&lt;/p&gt;&lt;p&gt;如果乙没有止损概念，在甲亏损50%时买入并一直持有，那么当甲亏损90%时，乙亏损80%。&lt;/p&gt;&lt;p&gt;如果乙有预设的止损点，并严格按纪律执行，那么当甲亏损90%时，乙其实早在自己止损的那个点已经把资产抛售。&lt;/p&gt;&lt;p&gt;&lt;b&gt;二、如果甲本身借了钱去炒股，而乙使用自有资金炒股&lt;/b&gt;&lt;/p&gt;&lt;p&gt;比如说甲自身有1万元，同时向亲戚朋友借1万元去炒股，股价10.00元/股，不算交易佣金，2万元可以购买20手&lt;/p&gt;&lt;p&gt;那么当甲亏损50%时，换句话说，除去要还朋友的1万元，自有资金仅剩5000元，实际上他买的股票，持仓收益率为-0.5/2=-25%&lt;/p&gt;&lt;p&gt;换句话说，当初甲以10.00元一股买的股票,现在收盘价是7.50元，此时乙用自有资金进场抄底买了这只妖股。&lt;/p&gt;&lt;p&gt;那么情况一，乙没有止损概念，此时以每股7.50元抄底，当甲亏90%，实际意味着股票持仓市值1.1万，自有资金仅剩下0.1万，而当前股价5.50元/股&lt;/p&gt;&lt;p&gt;那么乙此时持仓亏损（期末价格-期初价格）/期初价格=（5.50-7.5）/7.5=-26.67%&lt;/p&gt;&lt;p&gt;如果乙有自己的止损点，那么亏损最大的也就是自己设的止损点幅度。&lt;/p&gt;&lt;p&gt;如果甲借的越多，杠杆倍数越大，亏得越多，乙持仓亏损比例越小。&lt;/p&gt;&lt;p&gt;&lt;b&gt;三、如果甲乙双方都借钱炒股。&lt;/b&gt;&lt;/p&gt;&lt;p&gt;将视甲乙借了多少而定，借的越多亏损越大，亏的越多，有可能乙自有本金太少，借的太多，亏光自己的本金都是有可能的。&lt;/p&gt;&lt;p&gt;&lt;b&gt;四、投资比例&lt;/b&gt;&lt;/p&gt;&lt;p&gt;说个最简单的，甲乙双方都没有借钱投资，乙也没有止损概念，但乙有100万闲置资产，不过，乙只拿出这部分资产1%进行炒股，其余99%买入银行类固收理财，如果此时买入的银行类固收理财，预期年化收益率为4%，假定持有期限一年，那么这部分债权，一年后，不发生系统性风险，能拿到3.96万利息。&lt;/p&gt;&lt;p&gt;哪怕乙在甲亏损50%进行抄底，而在甲亏损90%时，乙的股票持仓亏损80%，1万元本金仅剩下2000元，但是，实际上他的债权部分收益弥补了股权部分的亏损，实际上还是有盈利的。&lt;/p&gt;&lt;p&gt;所以，&lt;/p&gt;&lt;p&gt;1、不要借杠杆投资，投资失利情况下，借的越多，亏的越多。&lt;/p&gt;&lt;p&gt;2、股债要平衡&lt;/p&gt;&lt;p&gt;3、最好给自己设置止损点&lt;/p&gt;&lt;p&gt;4、不管钱多钱少，控制股债投资比例&lt;/p&gt;&lt;p&gt;5、选好投资标的，别傻愣愣的觉得别人亏了，自己就一定能赚，有些时候，碰到震荡下行的股票或基金，亏损概率会成倍提升。&lt;/p&gt;&lt;p&gt;注：文中计算并未考虑买卖交易佣金和股票持有期间分红情况。&lt;/p&gt;</textarea>
+<div class="zh-summary summary clearfix">
+昨天我碰到一个很有意思的问题，题主咨询，“甲亏50%时乙抄底，甲亏90%时乙亏多少？”，看起来是个数学计算题，但结论对大家有用，分享给大家。乙亏损多少分情况：甲乙都没借钱炒股；甲借钱炒股，乙没有借钱炒股；甲乙都借钱炒股；另外还需看投资比例问题。<b>…</b>
+
+<a href="https://zhuanlan.zhihu.com/p/30835287" class="toggle-expand">显示全部</a>
+
+</div>
+
+<p class="hidden-default"><a class="post-link entry-link" target="_blank" href="https://zhuanlan.zhihu.com/p/30835287">昨天 09:03</a></p>
+</div>
+</div>
+<div class="feed-meta">
+<div class="zm-item-meta meta clearfix js-contentActions">
+<div class="zm-meta-panel">
+
+<a href="#" class="meta-item votenum-mobile zm-item-vote-count js-openVoteDialog"><span data-bind-votecount="">31</span><i class="zg-icon arrow"></i></a>
+<div class="zm-votebar" data-za-module="VoteBar">
+<button class="up" aria-pressed="false" title="赞">
+<i class="icon vote-arrow"></i>
+<span class="count">31</span>
+<span class="label sr-only">赞</span>
+</button>
+</div>
+
+
+
+
+<a href="#" class="meta-item toggle-comment js-toggleCommentBox">
+<i class="z-icon-comment"></i>24 条评论</a>
+<a href="#" class="meta-item zu-autohide js-share"><i class="z-icon-share"></i>分享</a>
+<span class="zg-bull zu-autohide">•</span>
+<a href="#" class="meta-item zu-autohide js-report">举报</a>
+<span class="zg-bull">•</span>
+<a href="https://zhuanlan.zhihu.com/p/30835287" class="meta-item" target="_blank">去往文章页</a>
+<button class="meta-item item-collapse js-collapse">
+<i class="z-icon-fold"></i>收起
+</button>
+</div>
+
+</div>
+<a href="#" class="ignore zu-autohide" name="dislike" data-tooltip="s$b$不感兴趣"></a>
+</div>
+</div>
+</div>
+</div>
+<div class="undo-dislike-options" data-item_id="0">
+此内容将不会在动态中再次显示 <span class="zg-bull">•</span> <a href="#" class="meta-item revert">撤销</a>
+<a href="#" class="ignore zu-autohide close"></a>
+</div>
+</div>
+
+<div class="feed-item folding feed-item-hook feed-item-1
+ 
+" feed-item-a="" data-type="a" id="feed-1" data-za-module="FeedItem" data-za-index="">
+<meta itemprop="ZReactor" data-id="76841410" data-meta="{&quot;source_type&quot;: &quot;topic_acknowledged_answer&quot;, &quot;voteups&quot;: 86, &quot;comments&quot;: 80, &quot;source&quot;: [[&quot;topic&quot;, 99]]}">
+<div class="feed-item-inner">
+<div class="avatar">
+<a title="互联网" data-hovercard="t$t$19550517" class="zm-item-link-avatar" href="/topic/19550517" target="_blank">
+<img src="https://pic4.zhimg.com/f07808da5625fef3607f8b75b770349f_m.jpg" alt="互联网" class="side-topic-avatar">
+</a>
+</div>
+<div class="feed-main">
+<div class="feed-source" data-za-module="FeedSource">
+来自话题: <a href="/topic/19550517" data-hovercard="t$b$19550517" data-token="19550517" data-topicid="99" data-follow="1" data-interest="1" target="_blank" data-za-element-name="Title">互联网</a>
+
+</div>
+<div class="feed-content" data-za-module="AnswerItem" data-za-index="">
+<meta itemprop="answer-id" content="76841410">
+<meta itemprop="answer-url-token" content="257247153">
+<h2 class="feed-title"><a class="question_link" href="/question/67829942/answer/257247153" target="_blank" data-id="19360478" data-za-element-name="Title">
+如何评价携程幼儿园虐童案公司处理方式？
+</a></h2>
+<div class="feed-question-detail-item">
+
+<div class="question-description-plain zm-editable-content">
+
+</div>
+
+</div>
+<div class="expandable entry-body">
+<link itemprop="url" href="/question/67829942/answer/257247153">
+<!-- <meta itemprop="answer-id" content="76841410">
+<meta itemprop="answer-url-token" content="257247153"> -->
+
+
+<div class="zm-item-answer-author-info">
+<span class="name">匿名用户</span>
+</div>
+
+<div class="zm-item-vote-info" data-votecount="86" data-za-module="VoteInfo">
+
+
+
+<span class="voters text"><a href="#" class="more text"><span class="js-voteCount">86</span>&nbsp;人赞同</a></span>
+
+
+</div>
+<div class="zm-item-rich-text expandable js-collapse-body" data-resourceid="19360478" data-action="/answer/content" data-author-name="匿名用户" data-entry-url="/question/67829942/answer/257247153">
+
+<textarea hidden="" class="content">我是携程的员工，昨天下午，大boss孙洁发出邮件，我才知道这个事。&lt;br&gt;&lt;img src="https://pic2.zhimg.com/v2-26684e223fc45bb0780c4cd2ea62f91d_b.jpg" data-rawwidth="2048" data-rawheight="1536" class="origin_image zh-lightbox-thumb" width="2048" data-original="https://pic2.zhimg.com/v2-26684e223fc45bb0780c4cd2ea62f91d_r.jpg"&gt;然后一直刷微博，才了解了这件事的来龙去脉。公司建亲子园的初衷是好的，就是为了方便员工，本来是要自己做的，但是才做了一个星期就被叫停。后来妇联牵线，引来了第三方，加之监管不力，才引火上身，好心办了坏事。&lt;br&gt;&lt;br&gt;今天早上来上班，看到大boss昨晚发出来的第二封邮件。&lt;br&gt;&lt;br&gt;&lt;img src="https://pic2.zhimg.com/v2-3fc2515d35d91e9befbf82068e6a48b5_b.jpg" data-rawwidth="2048" data-rawheight="1536" class="origin_image zh-lightbox-thumb" width="2048" data-original="https://pic2.zhimg.com/v2-3fc2515d35d91e9befbf82068e6a48b5_r.jpg"&gt;我觉得携程的处理是积极的，在携程那么多年，没看到因为哪件事情大boss会连续打出两封公开邮件。&lt;br&gt;引咎辞职的是总部的高级hr总监邵**（还是不说名字了），她的职位在携程非常高，八级员工（基本就是做到顶了），也能看出领导层对这件事情的重视程度。&lt;br&gt;&lt;br&gt;毕竟不是携程虐待儿童，而是携程的儿童被虐待。&lt;br&gt;&lt;br&gt;评论里有说，携程做亲子园有利可图，请先了解一下携程的创始人梁建章，他本人一直在致力于中国人口发展问题，携程鼓励生二胎，我们同事基本都是怀了孕就回家，每个月公司还给发些底薪，五险一金照样给交，加上产假基本都可以休一年的，回来后还可以领生育津贴和奖励金。办亲子园的目的就是方便员工，携程是免费提供的场地，价格也低于市场托班的价格，本来是要自己操办的，后来受到阻碍才请的第三方，确实监管不力，现在携程也在积极补救，负责人已经被引咎辞职了（以后不再赘述）。&lt;br&gt;关于之前的捆绑销售，不是携程一家，是所有的类似企业都这样，携程也已经积极整改。我们也喜欢客人提出携程的各种不足，最好可以让高层领导引起重视的那种，这样携程也会逐渐变成更好的企业。</textarea>
+
+
+<div class="zh-summary summary clearfix">
+<img src="https://pic2.zhimg.com/v2-26684e223fc45bb0780c4cd2ea62f91d_200x112.jpg" data-rawwidth="2048" data-rawheight="1536" class="origin_image inline-img zh-lightbox-thumb" data-original="https://pic2.zhimg.com/v2-26684e223fc45bb0780c4cd2ea62f91d_r.jpg">
+我是携程的员工，昨天下午，大boss孙洁发出邮件，我才知道这个事。 然后一直刷微博，才了解了这件事的来龙去脉。公司建亲子园的初衷是好的，就是为了方便员工，本来是要自己做的，但是才做了一个星期就被叫停。后来妇联牵线，引来了第三方，加之监管不力，…
+
+<a href="/question/67829942/answer/257247153" class="toggle-expand">显示全部</a>
+
+</div>
+
+
+
+<p class="visible-expanded"><a itemprop="url" class="answer-date-link meta-item" data-tooltip="s$t$发布于 10:58" target="_blank" href="/question/67829942/answer/257247153">编辑于 17:32</a></p>
+
+</div>
+</div>
+<div class="feed-meta">
+<div class="zm-item-meta answer-actions clearfix js-contentActions">
+<div class="zm-meta-panel">
+
+<a href="#" class="meta-item votenum-mobile zm-item-vote-count  js-openVoteDialog">
+<span data-bind-votecount="">86</span><i class="arrow zg-icon"></i>
+</a>
+<div class="zm-votebar" data-za-module="VoteBar">
+<button class="up" aria-pressed="false" title="赞同">
+<i class="icon vote-arrow"></i>
+<span class="count">86</span>
+<span class="label sr-only">赞同</span>
+</button>
+<button class="down" aria-pressed="false" title="反对，不会显示你的姓名">
+<i class="icon vote-arrow"></i>
+<span class="label sr-only">反对，不会显示你的姓名</span>
+</button>
+</div>
+
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-19360478"><i class="z-icon-follow"></i>关注问题</a>
+
+<a href="#" name="addcomment" class="meta-item toggle-comment js-toggleCommentBox">
+<i class="z-icon-comment"></i>80 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide js-thank" data-thanked="false"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+
+
+<span class="phone-actions">
+<a href="#" class="menubutton more-actions meta-item zu-autohide goog-inline-block goog-menu-button" role="button" aria-expanded="false" tabindex="0" aria-haspopup="true" style="user-select: none;"><div class="goog-inline-block goog-menu-button-outer-box"><div class="goog-inline-block goog-menu-button-inner-box"><div class="goog-inline-block goog-menu-button-caption"><i class="zg-icon zg-icon-ellipsis-mobi"></i><span class="hide-text">更多</span></div><div class="goog-inline-block goog-menu-button-dropdown">&nbsp;</div></div></div></a>
+<div class="menu goog-menu goog-menu-vertical zh-answer-more-actions" style="display: none; user-select: none;" role="menu" aria-haspopup="true"><div class="goog-menuitem js-share" role="menuitem" id=":b" style="user-select: none;"><div class="goog-menuitem-content" style="user-select: none;">分享</div></div><div class="goog-menuseparator" aria-disabled="true" role="separator" id=":c" style="user-select: none;"></div><div class="goog-menuitem js-collect" role="menuitem" id=":d" style="user-select: none;"><div class="goog-menuitem-content" style="user-select: none;">收藏</div></div><div class="goog-menuseparator" aria-disabled="true" role="separator" id=":e" style="user-select: none;"></div><div class="goog-menuitem js-noHelp" role="menuitem" id=":f" style="user-select: none;"><div class="goog-menuitem-content" style="user-select: none;">没有帮助</div></div><div class="goog-menuseparator" aria-disabled="true" role="separator" id=":g" style="user-select: none;"></div><div class="goog-menuitem js-report" role="menuitem" id=":h" style="user-select: none;"><div class="goog-menuitem-content" style="user-select: none;">举报</div></div></div>
+</span>
+
+
+
+<meta name="copyrightStatus" content="1">
+<meta name="disableCopyAvatar" content="">
+
+<span class="zg-bull">•</span>
+
+<a href="/terms#sec-licence-1" target="_blank" class="meta-item copyright">
+作者保留权利
+</a>
+
+
+<button class="meta-item item-collapse js-collapse">
+<i class="z-icon-fold"></i>收起
+</button>
+</div>
+</div>
+<a href="#" class="ignore zu-autohide" name="dislike" data-tooltip="s$b$不感兴趣"></a>
+</div>
+</div>
+</div>
+</div>
+<div class="undo-dislike-options" data-item_id="1">
+此内容将不会在动态中再次显示 <span class="zg-bull">•</span> <a href="#" class="meta-item revert">撤销</a>
+<a href="#" class="ignore zu-autohide close"></a>
+</div>
+</div>
+
+<div class="feed-item folding feed-item-hook feed-item-2
+ 
+" feed-item-a="" data-type="a" id="feed-2" data-za-module="FeedItem" data-za-index="">
+<meta itemprop="ZReactor" data-id="76837879" data-meta="{&quot;source_type&quot;: &quot;topic_acknowledged_answer&quot;, &quot;voteups&quot;: 14, &quot;comments&quot;: 18, &quot;source&quot;: [[&quot;topic&quot;, 395]]}">
+<div class="feed-item-inner">
+<div class="avatar">
+<a title="投资" data-hovercard="t$t$19551404" class="zm-item-link-avatar" href="/topic/19551404" target="_blank">
+<img src="https://pic4.zhimg.com/cdadbe013_m.jpg" alt="投资" class="side-topic-avatar">
+</a>
+</div>
+<div class="feed-main">
+<div class="feed-source" data-za-module="FeedSource">
+来自话题: <a href="/topic/19551404" data-hovercard="t$b$19551404" data-token="19551404" data-topicid="395" data-follow="1" data-interest="1" target="_blank" data-za-element-name="Title">投资</a>
+
+</div>
+<div class="feed-content" data-za-module="AnswerItem" data-za-index="">
+<meta itemprop="answer-id" content="76837879">
+<meta itemprop="answer-url-token" content="257227951">
+<h2 class="feed-title"><a class="question_link" href="/question/67841369/answer/257227951" target="_blank" data-id="19365111" data-za-element-name="Title">
+老罗在成都买房子了，带领锤子公司都来成都安家，将会对成都房价产生什么样的影响？
+</a></h2>
+<div class="feed-question-detail-item">
+
+<a href="#" class="toggle-expand btn-toggle-question-detail ellipsis js-expandQuestionDetail">45岁的罗永浩也在成都购置了人生第一套房...&nbsp;<span>显示问题详情</span></a>
+<div class="question-description zm-editable-content">
+45岁的罗永浩也在成都购置了人生第一套房子。他拿这件事现身说法，以说服更多北京的同事随迁至成都。他表示，目前“说服工作”实际进展要比预想的情况好很多。<br><br>“年轻的都愿意过来，不愿意来的，你领他们来看一下，差不多两三天也就‘投降’了。”目前，锤子科技成都的总部的员工已有170余人。年底，研发团队也将落户于此。<br><br>据罗永浩介绍，锤子科技总部将落户成都成华区。目前，其在世茂大厦的办公区正在装修，预计11月底可正式投入使用。<br><br>凤凰新闻：对话罗永浩：锤子起死回生，我买了人生第一套房<br><br>锤子科技不在互联网公司众多的高新区，而在成华区，员工买房买在哪里是个问题。不过愿意从北京跟来成都的应该都是铁杆员工，不会跳槽，而是干到上市。<br><br>以后上市了，很多员工会买别墅开车上班，那会买在哪呢？<br><br>而且会出现很多锤子系创业，会不会逐渐形成另一个互联网公司集中地？<br><img src="https://pic3.zhimg.com/v2-d63613871c013d3473bcfd78621c6416_b.png" data-rawwidth="1080" data-rawheight="1920" class="origin_image zh-lightbox-thumb" data-original="https://pic3.zhimg.com/v2-d63613871c013d3473bcfd78621c6416_r.png"><br><img src="https://pic1.zhimg.com/v2-06f953a684b02095f76a43102629fbb0_b.png" data-rawwidth="1080" data-rawheight="1920" class="origin_image zh-lightbox-thumb" data-original="https://pic1.zhimg.com/v2-06f953a684b02095f76a43102629fbb0_r.png">
+</div>
+
+</div>
+<div class="expandable entry-body">
+<link itemprop="url" href="/question/67841369/answer/257227951">
+<!-- <meta itemprop="answer-id" content="76837879">
+<meta itemprop="answer-url-token" content="257227951"> -->
+
+
+<div class="zm-item-answer-author-info">
+
+<span class="summary-wrapper">
+<span class="author-link-line">
+
+<a class="author-link" data-hovercard="p$t$david-lee-60-93" target="_blank" href="/people/david-lee-60-93">david lee</a></span><span title="煞笔太多" class="bio">
+煞笔太多
+</span>
+</span>
+</div>
+
+<div class="zm-item-vote-info" data-votecount="14" data-za-module="VoteInfo">
+
+
+
+<span class="voters text"><a href="#" class="more text"><span class="js-voteCount">14</span>&nbsp;人赞同</a></span>
+
+
+</div>
+<div class="zm-item-rich-text expandable js-collapse-body" data-resourceid="19365111" data-action="/answer/content" data-author-name="david lee" data-entry-url="/question/67841369/answer/257227951">
+
+<textarea hidden="" class="content">&lt;p&gt;成都作为一个网红城市，拉来老罗这个大网红，可谓非常明智的决策。这6亿值！ &lt;/p&gt;&lt;p&gt;首先，成都本土的有影响力的高新互联网公司太少，一个tap4fun前几天才刚刚上市过审失败。所以成都要加大对高新产业的扶持，毕竟未来的增长点就在这里。&lt;/p&gt;&lt;p&gt;其次，作为网红，老罗年年登头条，虽然吐槽的不少，但对年轻人影响力大。一首《成都》把成都推销给了所谓的小清新，但小清新们毕竟是健忘的。要对他们持续的刺激，成都就需要持续的登上头条，否则容易淡出他们的视野。而老罗这个大网红贴上了成都的标，绝对是1+1&amp;gt;2.&lt;/p&gt;&lt;p&gt;什么是网红？照直男的理解，就是你想睡她，但是不想和她一起过日子。而成都不同于一般的网红城市，&lt;b&gt;吸引大量人口到来的同时，希望能够有足够的科技产业资本，让到来的高端人口能够安心的和他一起过日子&lt;/b&gt;。&lt;/p&gt;&lt;p&gt;所以，成都不同在于，有内在实力，又有现代化的营销方法，这样的城市在未来是极具发展潜力的。&lt;/p&gt;&lt;p&gt;至于房价，你懂的！&lt;/p&gt;</textarea>
+
+
+<div class="zh-summary summary clearfix">
+
+成都作为一个网红城市，拉来老罗这个大网红，可谓非常明智的决策。这6亿值！ 首先，成都本土的有影响力的高新互联网公司太少，一个tap4fun前几天才刚刚上市过审失败。所以成都要加大对高新产业的扶持，毕竟未来的增长点就在这里。其次，作为网红，老罗年年…
+
+<a href="/question/67841369/answer/257227951" class="toggle-expand">显示全部</a>
+
+</div>
+
+
+
+<p class="visible-expanded"><a itemprop="url" class="answer-date-link meta-item" data-tooltip="s$t$发布于 10:24" target="_blank" href="/question/67841369/answer/257227951">编辑于 10:24</a></p>
+
+</div>
+</div>
+<div class="feed-meta">
+<div class="zm-item-meta answer-actions clearfix js-contentActions">
+<div class="zm-meta-panel">
+
+<a href="#" class="meta-item votenum-mobile zm-item-vote-count  js-openVoteDialog">
+<span data-bind-votecount="">14</span><i class="arrow zg-icon"></i>
+</a>
+<div class="zm-votebar" data-za-module="VoteBar">
+<button class="up" aria-pressed="false" title="赞同">
+<i class="icon vote-arrow"></i>
+<span class="count">14</span>
+<span class="label sr-only">赞同</span>
+</button>
+<button class="down" aria-pressed="false" title="反对，不会显示你的姓名">
+<i class="icon vote-arrow"></i>
+<span class="label sr-only">反对，不会显示你的姓名</span>
+</button>
+</div>
+
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-19365111"><i class="z-icon-follow"></i>关注问题</a>
+
+<a href="#" name="addcomment" class="meta-item toggle-comment js-toggleCommentBox">
+<i class="z-icon-comment"></i>18 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide js-thank" data-thanked="false"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+
+
+<span class="phone-actions">
+<a href="#" class="menubutton more-actions meta-item zu-autohide goog-inline-block goog-menu-button" role="button" aria-expanded="false" tabindex="0" aria-haspopup="true" style="user-select: none;"><div class="goog-inline-block goog-menu-button-outer-box"><div class="goog-inline-block goog-menu-button-inner-box"><div class="goog-inline-block goog-menu-button-caption"><i class="zg-icon zg-icon-ellipsis-mobi"></i><span class="hide-text">更多</span></div><div class="goog-inline-block goog-menu-button-dropdown">&nbsp;</div></div></div></a>
+<div class="menu goog-menu goog-menu-vertical zh-answer-more-actions" style="display: none; user-select: none;" role="menu" aria-haspopup="true"><div class="goog-menuitem js-share" role="menuitem" id=":n" style="user-select: none;"><div class="goog-menuitem-content" style="user-select: none;">分享</div></div><div class="goog-menuseparator" aria-disabled="true" role="separator" id=":o" style="user-select: none;"></div><div class="goog-menuitem js-collect" role="menuitem" id=":p" style="user-select: none;"><div class="goog-menuitem-content" style="user-select: none;">收藏</div></div><div class="goog-menuseparator" aria-disabled="true" role="separator" id=":q" style="user-select: none;"></div><div class="goog-menuitem js-noHelp" role="menuitem" id=":r" style="user-select: none;"><div class="goog-menuitem-content" style="user-select: none;">没有帮助</div></div><div class="goog-menuseparator" aria-disabled="true" role="separator" id=":s" style="user-select: none;"></div><div class="goog-menuitem js-report" role="menuitem" id=":t" style="user-select: none;"><div class="goog-menuitem-content" style="user-select: none;">举报</div></div></div>
+</span>
+
+
+
+<meta name="copyrightStatus" content="1">
+<meta name="disableCopyAvatar" content="">
+
+<span class="zg-bull">•</span>
+
+<a href="/terms#sec-licence-1" target="_blank" class="meta-item copyright">
+作者保留权利
+</a>
+
+
+<button class="meta-item item-collapse js-collapse">
+<i class="z-icon-fold"></i>收起
+</button>
+</div>
+</div>
+<a href="#" class="ignore zu-autohide" name="dislike" data-tooltip="s$b$不感兴趣"></a>
+</div>
+</div>
+</div>
+</div>
+<div class="undo-dislike-options" data-item_id="2">
+此内容将不会在动态中再次显示 <span class="zg-bull">•</span> <a href="#" class="meta-item revert">撤销</a>
+<a href="#" class="ignore zu-autohide close"></a>
+</div>
+</div>
+
+<div class="feed-item folding feed-item-hook feed-item-3
+ 
+" feed-item-a="" data-type="a" id="feed-3" data-za-module="FeedItem" data-za-index="">
+<meta itemprop="ZReactor" data-id="76873483" data-meta="{&quot;source_type&quot;: &quot;topic_acknowledged_answer&quot;, &quot;voteups&quot;: 108, &quot;comments&quot;: 15, &quot;source&quot;: [[&quot;topic&quot;, 99]]}">
+<div class="feed-item-inner">
+<div class="avatar">
+<a title="互联网" data-hovercard="t$t$19550517" class="zm-item-link-avatar" href="/topic/19550517" target="_blank">
+<img src="https://pic4.zhimg.com/f07808da5625fef3607f8b75b770349f_m.jpg" alt="互联网" class="side-topic-avatar">
+</a>
+</div>
+<div class="feed-main">
+<div class="feed-source" data-za-module="FeedSource">
+来自话题: <a href="/topic/19550517" data-hovercard="t$b$19550517" data-token="19550517" data-topicid="99" data-follow="1" data-interest="1" target="_blank" data-za-element-name="Title">互联网</a>
+
+</div>
+<div class="feed-content" data-za-module="AnswerItem" data-za-index="">
+<meta itemprop="answer-id" content="76873483">
+<meta itemprop="answer-url-token" content="257424117">
+<h2 class="feed-title"><a class="question_link" href="/question/66183564/answer/257424117" target="_blank" data-id="18700288" data-za-element-name="Title">
+哪一个瞬间让你觉得移动支付真的改变了生活？
+</a></h2>
+<div class="feed-question-detail-item">
+
+<div class="question-description-plain zm-editable-content">
+
+</div>
+
+</div>
+<div class="expandable entry-body">
+<link itemprop="url" href="/question/66183564/answer/257424117">
+<!-- <meta itemprop="answer-id" content="76873483">
+<meta itemprop="answer-url-token" content="257424117"> -->
+
+
+<div class="zm-item-answer-author-info">
+
+<span class="summary-wrapper">
+<span class="author-link-line">
+
+<a class="author-link" data-hovercard="p$t$RickyFine" target="_blank" href="/people/RickyFine">李启方</a></span><span title="数据管理从业者，IT转大数据中~" class="bio">
+数据管理从业者，IT转大数据中~
+</span>
+</span>
+</div>
+
+<div class="zm-item-vote-info" data-votecount="108" data-za-module="VoteInfo">
+
+
+
+<span class="voters text"><a href="#" class="more text"><span class="js-voteCount">108</span>&nbsp;人赞同</a></span>
+
+
+</div>
+<div class="zm-item-rich-text expandable js-collapse-body" data-resourceid="18700288" data-action="/answer/content" data-author-name="李启方" data-entry-url="/question/66183564/answer/257424117">
+
+<textarea hidden="" class="content">&lt;p&gt;这两年我爸承包了60多亩鱼塘，开发了一个钓鱼场。&lt;/p&gt;&lt;p&gt;有一次回家，我爸问我微信转账怎么弄，我纳闷着穷乡僻壤的地方要什么微信支付宝，日常发红包我爸也是只收不发。&lt;/p&gt;&lt;p&gt;绑卡验证码支付密码的事怕我爸搞不清楚，于是我就把我的微信二维码打印出来贴了墙上。&lt;/p&gt;&lt;p&gt;两天后，我发现我的钱包余额每天都在涨涨涨。&lt;/p&gt;&lt;p&gt;粗略盘算了一下，一个月能收到我一半的工资。&lt;/p&gt;&lt;p&gt;不禁感叹，这副业来钱好轻松。&lt;/p&gt;&lt;p&gt;移动支付真的改变了我·的·生·活。&lt;/p&gt;</textarea>
+
+
+<div class="zh-summary summary clearfix">
+
+这两年我爸承包了60多亩鱼塘，开发了一个钓鱼场。有一次回家，我爸问我微信转账怎么弄，我纳闷着穷乡僻壤的地方要什么微信支付宝，日常发红包我爸也是只收不发。绑卡验证码支付密码的事怕我爸搞不清楚，于是我就把我的微信二维码打印出来贴了墙上。两天后，…
+
+<a href="/question/66183564/answer/257424117" class="toggle-expand">显示全部</a>
+
+</div>
+
+
+
+<p class="visible-expanded"><a itemprop="url" class="answer-date-link meta-item" target="_blank" href="/question/66183564/answer/257424117">发布于 16:41</a></p>
+
+</div>
+</div>
+<div class="feed-meta">
+<div class="zm-item-meta answer-actions clearfix js-contentActions">
+<div class="zm-meta-panel">
+
+<a href="#" class="meta-item votenum-mobile zm-item-vote-count  js-openVoteDialog">
+<span data-bind-votecount="">108</span><i class="arrow zg-icon"></i>
+</a>
+<div class="zm-votebar" data-za-module="VoteBar">
+<button class="up" aria-pressed="false" title="赞同">
+<i class="icon vote-arrow"></i>
+<span class="count">108</span>
+<span class="label sr-only">赞同</span>
+</button>
+<button class="down" aria-pressed="false" title="反对，不会显示你的姓名">
+<i class="icon vote-arrow"></i>
+<span class="label sr-only">反对，不会显示你的姓名</span>
+</button>
+</div>
+
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-18700288"><i class="z-icon-follow"></i>关注问题</a>
+
+<a href="#" name="addcomment" class="meta-item toggle-comment js-toggleCommentBox">
+<i class="z-icon-comment"></i>15 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide js-thank" data-thanked="false"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+
+
+<span class="phone-actions">
+<a href="#" class="menubutton more-actions meta-item zu-autohide goog-inline-block goog-menu-button" role="button" aria-expanded="false" tabindex="0" aria-haspopup="true" style="user-select: none;"><div class="goog-inline-block goog-menu-button-outer-box"><div class="goog-inline-block goog-menu-button-inner-box"><div class="goog-inline-block goog-menu-button-caption"><i class="zg-icon zg-icon-ellipsis-mobi"></i><span class="hide-text">更多</span></div><div class="goog-inline-block goog-menu-button-dropdown">&nbsp;</div></div></div></a>
+<div class="menu goog-menu goog-menu-vertical zh-answer-more-actions" style="display: none; user-select: none;" role="menu" aria-haspopup="true"><div class="goog-menuitem js-share" role="menuitem" id=":z" style="user-select: none;"><div class="goog-menuitem-content" style="user-select: none;">分享</div></div><div class="goog-menuseparator" aria-disabled="true" role="separator" id=":10" style="user-select: none;"></div><div class="goog-menuitem js-collect" role="menuitem" id=":11" style="user-select: none;"><div class="goog-menuitem-content" style="user-select: none;">收藏</div></div><div class="goog-menuseparator" aria-disabled="true" role="separator" id=":12" style="user-select: none;"></div><div class="goog-menuitem js-noHelp" role="menuitem" id=":13" style="user-select: none;"><div class="goog-menuitem-content" style="user-select: none;">没有帮助</div></div><div class="goog-menuseparator" aria-disabled="true" role="separator" id=":14" style="user-select: none;"></div><div class="goog-menuitem js-report" role="menuitem" id=":15" style="user-select: none;"><div class="goog-menuitem-content" style="user-select: none;">举报</div></div></div>
+</span>
+
+
+
+<meta name="copyrightStatus" content="1">
+<meta name="disableCopyAvatar" content="">
+
+<span class="zg-bull">•</span>
+
+<a href="/terms#sec-licence-1" target="_blank" class="meta-item copyright">
+作者保留权利
+</a>
+
+
+<button class="meta-item item-collapse js-collapse">
+<i class="z-icon-fold"></i>收起
+</button>
+</div>
+</div>
+<a href="#" class="ignore zu-autohide" name="dislike" data-tooltip="s$b$不感兴趣"></a>
+</div>
+</div>
+</div>
+</div>
+<div class="undo-dislike-options" data-item_id="3">
+此内容将不会在动态中再次显示 <span class="zg-bull">•</span> <a href="#" class="meta-item revert">撤销</a>
+<a href="#" class="ignore zu-autohide close"></a>
+</div>
+</div>
+
+<div class="feed-item folding feed-item-hook feed-item-4
+ 
+" feed-item-a="" data-type="a" id="feed-4" data-za-module="FeedItem" data-za-index="">
+<meta itemprop="ZReactor" data-id="76736392" data-meta="{&quot;source_type&quot;: &quot;topic_acknowledged_answer&quot;, &quot;voteups&quot;: 36, &quot;comments&quot;: 0, &quot;source&quot;: [[&quot;topic&quot;, 395]]}">
+<div class="feed-item-inner">
+<div class="avatar">
+<a title="投资" data-hovercard="t$t$19551404" class="zm-item-link-avatar" href="/topic/19551404" target="_blank">
+<img src="https://pic4.zhimg.com/cdadbe013_m.jpg" alt="投资" class="side-topic-avatar">
+</a>
+</div>
+<div class="feed-main">
+<div class="feed-source" data-za-module="FeedSource">
+来自话题: <a href="/topic/19551404" data-hovercard="t$b$19551404" data-token="19551404" data-topicid="395" data-follow="1" data-interest="1" target="_blank" data-za-element-name="Title">投资</a>
+
+</div>
+<div class="feed-content" data-za-module="AnswerItem" data-za-index="">
+<meta itemprop="answer-id" content="76736392">
+<meta itemprop="answer-url-token" content="256669492">
+<h2 class="feed-title"><a class="question_link" href="/question/27534877/answer/256669492" target="_blank" data-id="3196774" data-za-element-name="Title">
+李嘉诚为什么要撤资？
+</a></h2>
+<div class="feed-question-detail-item">
+
+<a href="#" class="toggle-expand btn-toggle-question-detail ellipsis js-expandQuestionDetail">为什么李嘉诚要撤陆资和港资？因为二者要进...&nbsp;<span>显示问题详情</span></a>
+<div class="question-description zm-editable-content">
+为什么李嘉诚要撤陆资和港资？因为二者要进入大萧条，还是因为后台倒了？通过他的行为能不能说明资本家爱钱胜于爱国？
+</div>
+
+</div>
+<div class="expandable entry-body">
+<link itemprop="url" href="/question/27534877/answer/256669492">
+<!-- <meta itemprop="answer-id" content="76736392">
+<meta itemprop="answer-url-token" content="256669492"> -->
+
+
+<div class="zm-item-answer-author-info">
+
+<span class="summary-wrapper">
+<span class="author-link-line">
+
+<a class="author-link" data-hovercard="p$t$ying-cong-lin" target="_blank" href="/people/ying-cong-lin">忆中人</a></span><span title="顺势而为，随欲而安" class="bio">
+顺势而为，随欲而安
+</span>
+</span>
+</div>
+
+<div class="zm-item-vote-info" data-votecount="36" data-za-module="VoteInfo">
+
+
+
+<span class="voters text"><a href="#" class="more text"><span class="js-voteCount">36</span>&nbsp;人赞同</a></span>
+
+
+</div>
+<div class="zm-item-rich-text expandable js-collapse-body" data-resourceid="3196774" data-action="/answer/content" data-author-name="忆中人" data-entry-url="/question/27534877/answer/256669492">
+
+<textarea hidden="" class="content">个人片面看法。&lt;br&gt;房地产这块，上海屯地最厉害的就是和黄（现在叫长实），一屯十几年，不开发的土地资本都翻了十倍。过去，国家请你来帮忙发展，你玩屯地。现在的房开市场，政府已经不是求着你来造房子搞城镇化了，开发商太多了，都在压缩利润，搞标准化，以后都是国企大开发商舞台，投机倒把的长实当然适应不了了。</textarea>
+
+
+<div class="zh-summary summary clearfix">
+
+个人片面看法。 房地产这块，上海屯地最厉害的就是和黄（现在叫长实），一屯十几年，不开发的土地资本都翻了十倍。过去，国家请你来帮忙发展，你玩屯地。现在的房开市场，政府已经不是求着你来造房子搞城镇化了，开发商太多了，都在压缩利润，搞标准化，以…
+
+<a href="/question/27534877/answer/256669492" class="toggle-expand">显示全部</a>
+
+</div>
+
+
+
+<p class="visible-expanded"><a itemprop="url" class="answer-date-link meta-item" target="_blank" href="/question/27534877/answer/256669492">发布于 昨天 09:13</a></p>
+
+</div>
+</div>
+<div class="feed-meta">
+<div class="zm-item-meta answer-actions clearfix js-contentActions">
+<div class="zm-meta-panel">
+
+<a href="#" class="meta-item votenum-mobile zm-item-vote-count  js-openVoteDialog">
+<span data-bind-votecount="">36</span><i class="arrow zg-icon"></i>
+</a>
+<div class="zm-votebar" data-za-module="VoteBar">
+<button class="up" aria-pressed="false" title="赞同">
+<i class="icon vote-arrow"></i>
+<span class="count">36</span>
+<span class="label sr-only">赞同</span>
+</button>
+<button class="down" aria-pressed="false" title="反对，不会显示你的姓名">
+<i class="icon vote-arrow"></i>
+<span class="label sr-only">反对，不会显示你的姓名</span>
+</button>
+</div>
+
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-3196774"><i class="z-icon-follow"></i>关注问题</a>
+
+<a href="#" name="addcomment" class="meta-item toggle-comment js-toggleCommentBox">
+<i class="z-icon-comment"></i>添加评论</a>
+
+
+<a href="#" class="meta-item zu-autohide js-thank" data-thanked="false"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+
+
+<span class="phone-actions">
+<a href="#" class="menubutton more-actions meta-item zu-autohide goog-inline-block goog-menu-button" role="button" aria-expanded="false" tabindex="0" aria-haspopup="true" style="user-select: none;"><div class="goog-inline-block goog-menu-button-outer-box"><div class="goog-inline-block goog-menu-button-inner-box"><div class="goog-inline-block goog-menu-button-caption"><i class="zg-icon zg-icon-ellipsis-mobi"></i><span class="hide-text">更多</span></div><div class="goog-inline-block goog-menu-button-dropdown">&nbsp;</div></div></div></a>
+<div class="menu goog-menu goog-menu-vertical zh-answer-more-actions" style="display: none; user-select: none;" role="menu" aria-haspopup="true"><div class="goog-menuitem js-share" role="menuitem" id=":1b" style="user-select: none;"><div class="goog-menuitem-content" style="user-select: none;">分享</div></div><div class="goog-menuseparator" aria-disabled="true" role="separator" id=":1c" style="user-select: none;"></div><div class="goog-menuitem js-collect" role="menuitem" id=":1d" style="user-select: none;"><div class="goog-menuitem-content" style="user-select: none;">收藏</div></div><div class="goog-menuseparator" aria-disabled="true" role="separator" id=":1e" style="user-select: none;"></div><div class="goog-menuitem js-noHelp" role="menuitem" id=":1f" style="user-select: none;"><div class="goog-menuitem-content" style="user-select: none;">没有帮助</div></div><div class="goog-menuseparator" aria-disabled="true" role="separator" id=":1g" style="user-select: none;"></div><div class="goog-menuitem js-report" role="menuitem" id=":1h" style="user-select: none;"><div class="goog-menuitem-content" style="user-select: none;">举报</div></div></div>
+</span>
+
+
+
+<meta name="copyrightStatus" content="1">
+<meta name="disableCopyAvatar" content="">
+
+<span class="zg-bull">•</span>
+
+<a href="/terms#sec-licence-1" target="_blank" class="meta-item copyright">
+作者保留权利
+</a>
+
+
+<button class="meta-item item-collapse js-collapse">
+<i class="z-icon-fold"></i>收起
+</button>
+</div>
+</div>
+<a href="#" class="ignore zu-autohide" name="dislike" data-tooltip="s$b$不感兴趣"></a>
+</div>
+</div>
+</div>
+</div>
+<div class="undo-dislike-options" data-item_id="4">
+此内容将不会在动态中再次显示 <span class="zg-bull">•</span> <a href="#" class="meta-item revert">撤销</a>
+<a href="#" class="ignore zu-autohide close"></a>
+</div>
+</div>
+
+<div class="feed-item folding feed-item-hook feed-item-5
+ 
+" feed-item-a="" data-type="a" id="feed-5" data-za-module="FeedItem" data-za-index="">
+<meta itemprop="ZReactor" data-id="76713966" data-meta="{&quot;source_type&quot;: &quot;topic_acknowledged_answer&quot;, &quot;voteups&quot;: 374, &quot;comments&quot;: 177, &quot;source&quot;: [[&quot;topic&quot;, 99]]}">
+<div class="feed-item-inner">
+<div class="avatar">
+<a title="互联网" data-hovercard="t$t$19550517" class="zm-item-link-avatar" href="/topic/19550517" target="_blank">
+<img src="https://pic4.zhimg.com/f07808da5625fef3607f8b75b770349f_m.jpg" alt="互联网" class="side-topic-avatar">
+</a>
+</div>
+<div class="feed-main">
+<div class="feed-source" data-za-module="FeedSource">
+来自话题: <a href="/topic/19550517" data-hovercard="t$b$19550517" data-token="19550517" data-topicid="99" data-follow="1" data-interest="1" target="_blank" data-za-element-name="Title">互联网</a>
+
+</div>
+<div class="feed-content" data-za-module="AnswerItem" data-za-index="">
+<meta itemprop="answer-id" content="76713966">
+<meta itemprop="answer-url-token" content="256546303">
+<h2 class="feed-title"><a class="question_link" href="/question/63016277/answer/256546303" target="_blank" data-id="17431853" data-za-element-name="Title">
+你见过哪些宛如智障的广告？
+</a></h2>
+<div class="feed-question-detail-item">
+
+<div class="question-description-plain zm-editable-content">
+
+</div>
+
+</div>
+<div class="expandable entry-body">
+<link itemprop="url" href="/question/63016277/answer/256546303">
+<!-- <meta itemprop="answer-id" content="76713966">
+<meta itemprop="answer-url-token" content="256546303"> -->
+
+
+<div class="zm-item-answer-author-info">
+
+<span class="summary-wrapper">
+<span class="author-link-line">
+
+<a class="author-link" data-hovercard="p$t$xi-qing-yu-li" target="_blank" href="/people/xi-qing-yu-li">西庆余里</a></span><span title="给人民带来快乐" class="bio">
+给人民带来快乐
+</span>
+</span>
+</div>
+
+<div class="zm-item-vote-info" data-votecount="374" data-za-module="VoteInfo">
+
+
+
+<span class="voters text"><a href="#" class="more text"><span class="js-voteCount">374</span>&nbsp;人赞同</a></span>
+
+
+</div>
+<div class="zm-item-rich-text expandable js-collapse-body" data-resourceid="17431853" data-action="/answer/content" data-author-name="西庆余里" data-entry-url="/question/63016277/answer/256546303">
+
+<textarea hidden="" class="content">&lt;p&gt;当初看这二逼广告时，我还以为我家电视坏了。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;恒~源~祥~北京奥运会赞助商。鼠鼠鼠！&lt;/p&gt;&lt;p&gt;恒~源~祥~北京奥运会赞助商。牛牛牛！&lt;/p&gt;&lt;p&gt;恒~源~祥~北京奥运会赞助商。虎虎虎！&lt;/p&gt;&lt;p&gt;恒~源~祥~北京奥运会赞助商。兔兔兔！&lt;/p&gt;&lt;p&gt;恒~源~祥~北京奥运会赞助商。龙龙龙！&lt;/p&gt;&lt;p&gt;恒~源~祥~北京奥运会赞助商。蛇蛇蛇！&lt;/p&gt;&lt;p&gt;恒~源~祥~北京奥运会赞助商。马马马！&lt;/p&gt;&lt;p&gt;恒~源~祥~北京奥运会赞助商。羊羊羊！&lt;/p&gt;&lt;p&gt;恒~源~祥~北京奥运会赞助商。猴猴猴！&lt;/p&gt;&lt;p&gt;恒~源~祥~北京奥运会赞助商。鸡鸡鸡！&lt;/p&gt;&lt;p&gt;恒~源~祥~北京奥运会赞助商。狗狗狗！&lt;/p&gt;&lt;p&gt;恒~源~祥~北京奥运会赞助商。猪猪猪！&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;瞅瞅把你能的！你咋不蛤蛤蛤呢！&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;感受一下，有视频。&lt;/p&gt;&lt;a class="video-box" href="//link.zhihu.com/?target=http%3A//www.iqiyi.com/w_19rst2s1yt.html" target="_blank" data-video-id="911364100477566976" data-video-playable="false" data-name="恒源祥的12生肖广告" data-poster="https://pic3.zhimg.com/80/v2-8b32cd147dcd1f2a04acdec9c788c7d6_b.jpg" data-lens-id=""&gt;              &lt;img class="thumbnail" src="https://pic3.zhimg.com/80/v2-8b32cd147dcd1f2a04acdec9c788c7d6_b.jpg"&gt;&lt;span class="content"&gt;                &lt;span class="title"&gt;恒源祥的12生肖广告&lt;span class="z-ico-extern-gray"&gt;&lt;/span&gt;&lt;span class="z-ico-extern-blue"&gt;&lt;/span&gt;&lt;/span&gt;                &lt;span class="url"&gt;&lt;span class="z-ico-video"&gt;&lt;/span&gt;http://www.iqiyi.com/w_19rst2s1yt.html&lt;/span&gt;              &lt;/span&gt;            &lt;/a&gt;</textarea>
+
+
+<div class="zh-summary summary clearfix">
+
+当初看这二逼广告时，我还以为我家电视坏了。 恒~源~祥~北京奥运会赞助商。鼠鼠鼠！恒~源~祥~北京奥运会赞助商。牛牛牛！恒~源~祥~北京奥运会赞助商。虎虎虎！恒~源~祥~北京奥运会赞助商。兔兔兔！恒~源~祥~北京奥运会赞助商。龙龙龙！恒~源~祥~北京奥运会…
+
+<a href="/question/63016277/answer/256546303" class="toggle-expand">显示全部</a>
+
+</div>
+
+
+
+<p class="visible-expanded"><a itemprop="url" class="answer-date-link meta-item" data-tooltip="s$t$发布于 2017-11-07" target="_blank" href="/question/63016277/answer/256546303">编辑于 昨天 14:56</a></p>
+
+</div>
+</div>
+<div class="feed-meta">
+<div class="zm-item-meta answer-actions clearfix js-contentActions">
+<div class="zm-meta-panel">
+
+<a href="#" class="meta-item votenum-mobile zm-item-vote-count  js-openVoteDialog">
+<span data-bind-votecount="">374</span><i class="arrow zg-icon"></i>
+</a>
+<div class="zm-votebar" data-za-module="VoteBar">
+<button class="up" aria-pressed="false" title="赞同">
+<i class="icon vote-arrow"></i>
+<span class="count">374</span>
+<span class="label sr-only">赞同</span>
+</button>
+<button class="down" aria-pressed="false" title="反对，不会显示你的姓名">
+<i class="icon vote-arrow"></i>
+<span class="label sr-only">反对，不会显示你的姓名</span>
+</button>
+</div>
+
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-17431853"><i class="z-icon-follow"></i>关注问题</a>
+
+<a href="#" name="addcomment" class="meta-item toggle-comment js-toggleCommentBox">
+<i class="z-icon-comment"></i>167 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide js-thank" data-thanked="false"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+
+
+<span class="phone-actions">
+<a href="#" class="menubutton more-actions meta-item zu-autohide goog-inline-block goog-menu-button" role="button" aria-expanded="false" tabindex="0" aria-haspopup="true" style="user-select: none;"><div class="goog-inline-block goog-menu-button-outer-box"><div class="goog-inline-block goog-menu-button-inner-box"><div class="goog-inline-block goog-menu-button-caption"><i class="zg-icon zg-icon-ellipsis-mobi"></i><span class="hide-text">更多</span></div><div class="goog-inline-block goog-menu-button-dropdown">&nbsp;</div></div></div></a>
+<div class="menu goog-menu goog-menu-vertical zh-answer-more-actions" style="display: none; user-select: none;" role="menu" aria-haspopup="true"><div class="goog-menuitem js-share" role="menuitem" id=":1n" style="user-select: none;"><div class="goog-menuitem-content" style="user-select: none;">分享</div></div><div class="goog-menuseparator" aria-disabled="true" role="separator" id=":1o" style="user-select: none;"></div><div class="goog-menuitem js-collect" role="menuitem" id=":1p" style="user-select: none;"><div class="goog-menuitem-content" style="user-select: none;">收藏</div></div><div class="goog-menuseparator" aria-disabled="true" role="separator" id=":1q" style="user-select: none;"></div><div class="goog-menuitem js-noHelp" role="menuitem" id=":1r" style="user-select: none;"><div class="goog-menuitem-content" style="user-select: none;">没有帮助</div></div><div class="goog-menuseparator" aria-disabled="true" role="separator" id=":1s" style="user-select: none;"></div><div class="goog-menuitem js-report" role="menuitem" id=":1t" style="user-select: none;"><div class="goog-menuitem-content" style="user-select: none;">举报</div></div></div>
+</span>
+
+
+
+<meta name="copyrightStatus" content="1">
+<meta name="disableCopyAvatar" content="">
+
+<span class="zg-bull">•</span>
+
+<a href="/terms#sec-licence-1" target="_blank" class="meta-item copyright">
+作者保留权利
+</a>
+
+
+<button class="meta-item item-collapse js-collapse">
+<i class="z-icon-fold"></i>收起
+</button>
+</div>
+</div>
+<a href="#" class="ignore zu-autohide" name="dislike" data-tooltip="s$b$不感兴趣"></a>
+</div>
+</div>
+</div>
+</div>
+<div class="undo-dislike-options" data-item_id="5">
+此内容将不会在动态中再次显示 <span class="zg-bull">•</span> <a href="#" class="meta-item revert">撤销</a>
+<a href="#" class="ignore zu-autohide close"></a>
+</div>
+</div>
+
+<div class="feed-item folding feed-item-hook feed-item-6
+ 
+" feed-item-a="" data-type="a" id="feed-6" data-za-module="FeedItem" data-za-index="">
+<meta itemprop="ZReactor" data-id="76894910" data-meta="{&quot;source_type&quot;: &quot;topic_acknowledged_answer&quot;, &quot;voteups&quot;: 12, &quot;comments&quot;: 2, &quot;source&quot;: [[&quot;topic&quot;, 3074]]}">
+<div class="feed-item-inner">
+<div class="avatar">
+<a title="数据分析" data-hovercard="t$t$19559424" class="zm-item-link-avatar" href="/topic/19559424" target="_blank">
+<img src="https://pic1.zhimg.com/v2-01fe2270f12565110955a18a92ff20f0_m.jpg" alt="数据分析" class="side-topic-avatar">
+</a>
+</div>
+<div class="feed-main">
+<div class="feed-source" data-za-module="FeedSource">
+来自话题: <a href="/topic/19559424" data-hovercard="t$b$19559424" data-token="19559424" data-topicid="3074" data-follow="1" data-interest="1" target="_blank" data-za-element-name="Title">数据分析</a>
+
+</div>
+<div class="feed-content" data-za-module="AnswerItem" data-za-index="">
+<meta itemprop="answer-id" content="76894910">
+<meta itemprop="answer-url-token" content="257541897">
+<h2 class="feed-title"><a class="question_link" href="/question/67062130/answer/257541897" target="_blank" data-id="19052558" data-za-element-name="Title">
+如何用三个月学会python？
+</a></h2>
+<div class="feed-question-detail-item">
+
+<a href="#" class="toggle-expand btn-toggle-question-detail ellipsis js-expandQuestionDetail">零基础，您要是问我学习目:我想学一门数据...&nbsp;<span>显示问题详情</span></a>
+<div class="question-description zm-editable-content">
+零基础，您要是问我学习目:我想学一门数据分析的语言，不敢说是谋生用，只是想掌握一种工具。没事爬点有用的数据资料什么的。<br>然后我手头有一些教程，简单看了下，感觉还能接收，但是我不知道我学这些有什么用。因此我想边用边学，在用的过程中遇到问题解决问题。不知道各位朋友能不能给点建议。有没有类似边练习边学习的方法。
+</div>
+
+</div>
+<div class="expandable entry-body">
+<link itemprop="url" href="/question/67062130/answer/257541897">
+<!-- <meta itemprop="answer-id" content="76894910">
+<meta itemprop="answer-url-token" content="257541897"> -->
+
+
+<div class="zm-item-answer-author-info">
+
+<span class="summary-wrapper">
+<span class="author-link-line">
+
+<a class="author-link" data-hovercard="p$t$xlzd" target="_blank" href="/people/xlzd">xlzd</a><span class="icon icon-badge-best_answerer icon-badge" data-tooltip="s$b$优秀回答者"></span></span><span class="badge-summary"><a href="/people/xlzd#hilightbadge" target="_blank">Python话题优秀回答者</a></span>
+
+
+
+<span title="None��" class="bio">
+None��
+</span>
+</span>
+</div>
+
+<div class="zm-item-vote-info" data-votecount="12" data-za-module="VoteInfo">
+
+
+
+<span class="voters text"><a href="#" class="more text"><span class="js-voteCount">12</span>&nbsp;人赞同</a></span>
+
+
+</div>
+<div class="zm-item-rich-text expandable js-collapse-body" data-resourceid="19052558" data-action="/answer/content" data-author-name="xlzd" data-entry-url="/question/67062130/answer/257541897">
+
+<textarea hidden="" class="content">&lt;p&gt;一直以来，但凡是有基础的人找我推荐书、课程学习 Python 入门，我都告诉他通过 Python 的官方文档：&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="//link.zhihu.com/?target=https%3A//docs.python.org/2/tutorial/index.html" class=" wrap external" target="_blank" rel="nofollow noreferrer"&gt;The Python Tutorial&lt;i class="icon-external"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="//link.zhihu.com/?target=https%3A//docs.python.org/2/library/index.html" class=" wrap external" target="_blank" rel="nofollow noreferrer"&gt;The Python Standard Library&lt;i class="icon-external"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="//link.zhihu.com/?target=https%3A//docs.python.org/2/reference/index.html" class=" wrap external" target="_blank" rel="nofollow noreferrer"&gt;The Python Language Reference&lt;i class="icon-external"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="//link.zhihu.com/?target=https%3A//docs.python.org/2/howto/index.html" class=" wrap external" target="_blank" rel="nofollow noreferrer"&gt;Python HOWTOs - Python 2.7.14 documentation&lt;i class="icon-external"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;但是对于没有经验的零基础入门者，我一直都推荐 &lt;a class="member_mention" href="//www.zhihu.com/people/c32ad3f421f57eaa80782e51ec6a5bde" data-hash="c32ad3f421f57eaa80782e51ec6a5bde" data-hovercard="p$b$c32ad3f421f57eaa80782e51ec6a5bde"&gt;@廖雪峰&lt;/a&gt; 老师的 Python 教程：&lt;a href="//link.zhihu.com/?target=https%3A//www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000" class=" wrap external" target="_blank" rel="nofollow noreferrer"&gt;Python教程 - 廖雪峰的官方网站&lt;i class="icon-external"&gt;&lt;/i&gt;&lt;/a&gt;。对于零基础初学者，具体入门需要多久得看自己的领悟能力和学习投入的精力，并不能保证「三个月学会」。不过对于「不敢说是谋生用，只是想掌握一种工具。没事爬点有用的数据资料什么的」的需求，肯定是可以满足的。&lt;/p&gt;</textarea>
+
+
+<div class="zh-summary summary clearfix">
+
+一直以来，但凡是有基础的人找我推荐书、课程学习 Python 入门，我都告诉他通过 Python 的官方文档：<a href="//link.zhihu.com/?target=https%3A//docs.python.org/2/tutorial/index.html" class=" wrap external" target="_blank" rel="nofollow noreferrer">The Python Tutorial<i class="icon-external"></i></a><a href="//link.zhihu.com/?target=https%3A//docs.python.org/2/library/index.html" class=" wrap external" target="_blank" rel="nofollow noreferrer">The Python Standard Library<i class="icon-external"></i></a><a href="//link.zhihu.com/?target=https%3A//docs.python.org/2/reference/index.html" class=" wrap external" target="_blank" rel="nofollow noreferrer">The Python Language Reference<i class="icon-external"></i></a><a href="//link.zhihu.com/?target=https%3A//docs.python.org/2/howto/index.html" class=" wrap external" target="_blank" rel="nofollow noreferrer">Python HOWTOs - Python 2.7.14 documentation<i class="icon-external"></i></a>但是对于没有经验的零基础入…
+
+<a href="/question/67062130/answer/257541897" class="toggle-expand">显示全部</a>
+
+</div>
+
+
+
+<p class="visible-expanded"><a itemprop="url" class="answer-date-link meta-item" target="_blank" href="/question/67062130/answer/257541897">发布于 21:10</a></p>
+
+</div>
+</div>
+<div class="feed-meta">
+<div class="zm-item-meta answer-actions clearfix js-contentActions">
+<div class="zm-meta-panel">
+
+<a href="#" class="meta-item votenum-mobile zm-item-vote-count  js-openVoteDialog">
+<span data-bind-votecount="">12</span><i class="arrow zg-icon"></i>
+</a>
+<div class="zm-votebar" data-za-module="VoteBar">
+<button class="up" aria-pressed="false" title="赞同">
+<i class="icon vote-arrow"></i>
+<span class="count">12</span>
+<span class="label sr-only">赞同</span>
+</button>
+<button class="down" aria-pressed="false" title="反对，不会显示你的姓名">
+<i class="icon vote-arrow"></i>
+<span class="label sr-only">反对，不会显示你的姓名</span>
+</button>
+</div>
+
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-19052558"><i class="z-icon-follow"></i>关注问题</a>
+
+<a href="#" name="addcomment" class="meta-item toggle-comment js-toggleCommentBox">
+<i class="z-icon-comment"></i>2 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide js-thank" data-thanked="false"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+
+
+<span class="phone-actions">
+<a href="#" class="menubutton more-actions meta-item zu-autohide goog-inline-block goog-menu-button" role="button" aria-expanded="false" tabindex="0" aria-haspopup="true" style="user-select: none;"><div class="goog-inline-block goog-menu-button-outer-box"><div class="goog-inline-block goog-menu-button-inner-box"><div class="goog-inline-block goog-menu-button-caption"><i class="zg-icon zg-icon-ellipsis-mobi"></i><span class="hide-text">更多</span></div><div class="goog-inline-block goog-menu-button-dropdown">&nbsp;</div></div></div></a>
+<div class="menu goog-menu goog-menu-vertical zh-answer-more-actions" style="display: none; user-select: none;" role="menu" aria-haspopup="true"><div class="goog-menuitem js-share" role="menuitem" id=":1z" style="user-select: none;"><div class="goog-menuitem-content" style="user-select: none;">分享</div></div><div class="goog-menuseparator" aria-disabled="true" role="separator" id=":20" style="user-select: none;"></div><div class="goog-menuitem js-collect" role="menuitem" id=":21" style="user-select: none;"><div class="goog-menuitem-content" style="user-select: none;">收藏</div></div><div class="goog-menuseparator" aria-disabled="true" role="separator" id=":22" style="user-select: none;"></div><div class="goog-menuitem js-noHelp" role="menuitem" id=":23" style="user-select: none;"><div class="goog-menuitem-content" style="user-select: none;">没有帮助</div></div><div class="goog-menuseparator" aria-disabled="true" role="separator" id=":24" style="user-select: none;"></div><div class="goog-menuitem js-report" role="menuitem" id=":25" style="user-select: none;"><div class="goog-menuitem-content" style="user-select: none;">举报</div></div></div>
+</span>
+
+
+
+<meta name="copyrightStatus" content="2">
+<meta name="disableCopyAvatar" content="https://pic3.zhimg.com/7131cbae7ddfef56d2a36596b7cff13e_s.png">
+
+<span class="zg-bull">•</span>
+
+
+<a href="/copyright/apply?answer=257541897" target="_blank" class="meta-item copyright">申请转载</a>
+
+
+
+<button class="meta-item item-collapse js-collapse">
+<i class="z-icon-fold"></i>收起
+</button>
+</div>
+</div>
+<a href="#" class="ignore zu-autohide" name="dislike" data-tooltip="s$b$不感兴趣"></a>
+</div>
+</div>
+</div>
+</div>
+<div class="undo-dislike-options" data-item_id="6">
+此内容将不会在动态中再次显示 <span class="zg-bull">•</span> <a href="#" class="meta-item revert">撤销</a>
+<a href="#" class="ignore zu-autohide close"></a>
+</div>
+</div>
+
+<div class="feed-item folding feed-item-hook feed-item-7
+ 
+" feed-item-a="" data-type="a" id="feed-7" data-za-module="FeedItem" data-za-index="">
+<meta itemprop="ZReactor" data-id="76731165" data-meta="{&quot;source_type&quot;: &quot;topic_acknowledged_answer&quot;, &quot;voteups&quot;: 524, &quot;comments&quot;: 291, &quot;source&quot;: [[&quot;topic&quot;, 395]]}">
+<div class="feed-item-inner">
+<div class="avatar">
+<a title="投资" data-hovercard="t$t$19551404" class="zm-item-link-avatar" href="/topic/19551404" target="_blank">
+<img src="https://pic4.zhimg.com/cdadbe013_m.jpg" alt="投资" class="side-topic-avatar">
+</a>
+</div>
+<div class="feed-main">
+<div class="feed-source" data-za-module="FeedSource">
+来自话题: <a href="/topic/19551404" data-hovercard="t$b$19551404" data-token="19551404" data-topicid="395" data-follow="1" data-interest="1" target="_blank" data-za-element-name="Title">投资</a>
+
+</div>
+<div class="feed-content" data-za-module="AnswerItem" data-za-index="">
+<meta itemprop="answer-id" content="76731165">
+<meta itemprop="answer-url-token" content="256640848">
+<h2 class="feed-title"><a class="question_link" href="/question/67769782/answer/256640848" target="_blank" data-id="19336359" data-za-element-name="Title">
+如果你有一百万，你会选择存银行还是放进支付宝？
+</a></h2>
+<div class="feed-question-detail-item">
+
+<a href="#" class="toggle-expand btn-toggle-question-detail ellipsis js-expandQuestionDetail">一百万放进支付宝一天的收益为101.11...&nbsp;<span>显示问题详情</span></a>
+<div class="question-description zm-editable-content">
+<p>一百万放进支付宝一天的收益为101.11，放进银行活期账户一天的利息为9.72，那么你们会选择把钱存进银行还是放进支付宝呢？</p>
+</div>
+
+</div>
+<div class="expandable entry-body">
+<link itemprop="url" href="/question/67769782/answer/256640848">
+<!-- <meta itemprop="answer-id" content="76731165">
+<meta itemprop="answer-url-token" content="256640848"> -->
+
+
+<div class="zm-item-answer-author-info">
+
+<span class="summary-wrapper">
+<span class="author-link-line">
+
+<a class="author-link" data-hovercard="p$t$chen-yang-2-39" target="_blank" href="/people/chen-yang-2-39">沈yyy</a></span>
+</span>
+</div>
+
+<div class="zm-item-vote-info" data-votecount="524" data-za-module="VoteInfo">
+
+
+
+<span class="voters text"><a href="#" class="more text"><span class="js-voteCount">524</span>&nbsp;人赞同</a></span>
+
+
+</div>
+<div class="zm-item-rich-text expandable js-collapse-body" data-resourceid="19336359" data-action="/answer/content" data-author-name="沈yyy" data-entry-url="/question/67769782/answer/256640848">
+
+<textarea hidden="" class="content">&lt;p&gt;1、问这个问题的一定没100万现金。&lt;/p&gt;&lt;p&gt;2、问这个问题的一定没学过金融。&lt;/p&gt;&lt;p&gt;3、问这个问题的一定不是银行贵宾。&lt;/p&gt;&lt;p&gt;4、问这个问题的一定不知道什么是合格投资者。&lt;/p&gt;&lt;p&gt;5、问这样的问题真的很low。&lt;/p&gt;&lt;p&gt;&lt;b&gt;最后添加，手动置顶&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;————————————————————————————————————&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;如果我有1000万人民币。我是应该存到瑞士的银行还是应该存到中国的银行？ - 沈yyy的回答 - &lt;a href="https://www.zhihu.com/question/67886585/answer/257489642" class="internal"&gt;&lt;span class="invisible"&gt;https://www.&lt;/span&gt;&lt;span class="visible"&gt;zhihu.com/question/6788&lt;/span&gt;&lt;span class="invisible"&gt;6585/answer/257489642&lt;/span&gt;&lt;span class="ellipsis"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;————————————————————————————————————&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;欢迎回答&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;有人说我不应该说别人问的问题low，以下为补充内容。&lt;/p&gt;&lt;p&gt;问出这样问题的，自己一定没100万现金可以随意支配来理财。因为到了100万现金可以随意支配的时候，他就根本不会把余额宝作为自己理财的一个选项（可能会拿出个三五万块放在 余额宝应急）。&lt;/p&gt;&lt;p&gt;有现金资产100万的，固定资产至少有200万（二线城市一套房），对于这些人，考虑的会是我究竟再买套房，还是买点股票，还是和别人做个生意。最不济的也是让银行的大堂经理推荐个信托，资管。&lt;/p&gt;&lt;p&gt;说他问的问题low，是因为这就跟问如果我每月挣2万块，是吃汉堡王还是吃肯德基一样。&lt;/p&gt;&lt;p&gt;以下为后添加————————&lt;/p&gt;&lt;p&gt;余额宝的最大优势是什么？是他的流动性（如果要是有人非要说利率和安全性是他的优势，我也无话可说，我们不在一个频道上）。对于一个有100万现金需要随时支取应付日常消费的人来说，他得是什么级别的土豪？如果他是做生意的，那这笔钱其实不是他的，而是公司的，并不能定义为随时可支配资产。&lt;/p&gt;&lt;p&gt;所以，如果真的到了有100万可以自由支配，首先考虑流动性的人是不是有些问题。这个阶段的人的理财观早都变了，他们考虑的是钱生钱，考虑不贬值。&lt;/p&gt;&lt;p&gt;还是那句话，这个问题问的就跟问“如果我每月挣2万块，是吃汉堡王还是吃肯德基？”一样&lt;/p&gt;&lt;p&gt;————————————————————————在加一段&lt;/p&gt;&lt;p&gt;有些人说这问题对无理财知识的人有意义，但是我想说：&lt;/p&gt;&lt;p&gt;一个人做任何的投资策略都是有道理的。哪怕全放在家里，埋在地里，我也认为他做这样的选择是有一定的道理的，他是一个极端保守主义者，他的风险偏好极低（有道理不代表正确）。&lt;/p&gt;&lt;p&gt;但是余额宝的优势是流动性，银行存款的优势是安全性。用100万去考虑流动性（得是怎样的土豪）。这样的如果是不是太low了，太没意义了！&lt;/p&gt;&lt;p&gt;还是那句话，这个问题问的就跟问“如果我每月挣2万块，是吃汉堡王还是吃肯德基？”一样&lt;/p&gt;&lt;p&gt;————————————————————————————————&lt;/p&gt;&lt;p&gt;好吧，地铁上随手打字写的评论居然毁誉参半。那我就花最后十分钟撕扯撕扯。&lt;/p&gt;&lt;p&gt;如果题主不是广告贴的话，我就和大家坐而论道（其实多半是广告贴，我想着损几句发广告贴的人没啥，谁知道居然这么多人 批评我，所以我们就权当他不是广告贴，我们来聊聊。）&lt;/p&gt;&lt;p&gt;姥爷以前在农村，每天窝头，有天队里吃了顿白面馒头，一人一个，有个人吃了意犹未尽，说，等俺家有粮食了，我要吃一笸箩馍。大家都笑他傻，说他吃不了这么多馍。&lt;/p&gt;&lt;p&gt;上面三个重点，第一个重点是等家有粮食了，第二个重点是一笸箩馍。第三个重点更深刻，大家认为他傻是认为他吃不了，而不是认为他没见过好吃的。&lt;/p&gt;&lt;p&gt;这个就是汉堡王和肯德基的例子。收入到了一定阶段，你不会再纠结这些东西，你只是根据自己的口味来随机选择，而不会去选择问。（不用金拱门是随手写的，汉堡王毕竟和kfc味道有差别，而金拱门毕竟和肯德基都是炸的，所以就随手举例子了，2万也是随手举得，我觉得在这个顶上纠结是2万月薪吃得起kfc是没什么意义的。）&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;回到正题，以下开始逐一说出我的观点：有人说我只是抖机灵，没回答题主问题，那我就请各位审审题，再看我是否回答了。&lt;/p&gt;&lt;h2&gt;如果你有一百万，你会选择存银行还是放进支付宝？&lt;/h2&gt;&lt;p&gt;一百万放进支付宝一天的收益为101.11，放进银行活期账户一天的利息为9.72，那么你们会选择把钱存进银行还是放进支付宝呢？&lt;/p&gt;&lt;p&gt;题主问的就是有了100万是存银行还是支付宝（如果不是广告）。他纠结的不是支付宝和银行活期的差异，而是收益。题设就是说把钱放不同的地方，差了10倍收益，你会怎么选。任何人都会选择高的。对于这样的问题，我自然觉得很没劲（说的狠了就是low）。如果我这样问，把钱放在瑞士银行（瑞士银行负利率），和放在中国银行活期存款，一个每年需要给银行若干钱，一个每天有9块钱利息，你会怎么选。（以此黑瑞士银行负利率，夸奖中国银行活期有利息）&lt;/p&gt;&lt;p&gt;我的回答还是，&lt;b&gt;你一定没权利在瑞士银行开户，这个问题问的很low。&lt;/b&gt;&lt;/p&gt;&lt;p&gt;2、关于那些说我不给具体建议的。抱歉，我没法给。首先题主已经问了他是纠结利息，不纠结别的，那只有一个答案，选择高利息的了。他喜欢就好。不过我想说，理财计划可不是拍个脑袋就想出来了，如果对你负责，得跟你聊段时间才能知道你想要什么（很多人都不知道自己想要什么）。还是那段话：&lt;/p&gt;&lt;p&gt;没房没车人手中的100万和有房有车的人的100万不一样&lt;/p&gt;&lt;p&gt;北上广深的100万和5线城市的100万不一样&lt;/p&gt;&lt;p&gt;20岁的人和60岁的人的100万不一样&lt;/p&gt;&lt;p&gt;靠月薪攒够100万的和做生意挣100万的不一样&lt;/p&gt;&lt;p&gt;甚至父母有退休金和父母没退休金的100万都不一样。&lt;/p&gt;&lt;p&gt;理财规划是应该根据人不同阶段，不同情况逐一分析。我随便给个指南，没任何意义。我不是胡万林，一包芒硝治天下。&lt;/p&gt;&lt;p&gt;3、说自己买房攒钱放在余额宝的。我觉得你的选择很对。因为我已经分析了，余额宝最大的优势是流动性，买房的钱随时有用，需要流动性，余额宝的收益高于活期，你做的这个选择很正确。&lt;/p&gt;&lt;p&gt;4、说不要歧视理财小白的。我从来不歧视，我觉得认真的问理财打算，我觉得很好，可是问我面前有一根金条，一根银条，让我选一个拿走，我只能说这个问题很没意义（很low）&lt;/p&gt;&lt;p&gt;5、说这个人可能是中彩票的。中彩票都是支票，银行的行长就来和你聊理财了，我就不信银行不给你推荐收益超过5的各种理财资管信托，到那个时候，题主的问题应该是，我是选择一天给我100的余额宝还是一天给我150的信托。这样的问题就很有意义了。&lt;/p&gt;&lt;p&gt;6、那些说这一百万万一是父母给的，我无话可说。选什么都好了，不过你父母有挣100万的本事，你最好问问他们的建议，而不是问知乎。&lt;/p&gt;&lt;p&gt;7、说挣100万很平常，都存在银行。我一开始就说了，这是一种理财，甚至放在床底下都是一种理财，这种理财没有对错之分。但是这些人，是问不出买余额宝还是买活期的问题的。他们会问存1年定期划算还是存三年活期划算。&lt;/p&gt;&lt;p&gt;8、再讲一个故事，我供职于一个金融机构（银证保三个之一），老爸一直有钱，但是都是固定存款，我从来不问，也不说。后来一次聊天，说道我没固定存款，我都买各种理财了，他第一问的不是收益多少，问的是安全不？我没法解释刚兑，我就说反正要是我们公司倒了，我也失业了，银行业估计得破产一半，券商估计会被兼并的剩10来家（只是随便说，别纠结银行会不会破产一半，券商剩哪十家），你那点钱估计也是废纸了。对于只信任银行的人来讲，他关心的首先是安全，其次才是收益。&lt;/p&gt;&lt;p&gt;最后我的总结：&lt;/p&gt;&lt;p&gt;1、这个题主如果不是广告，那就真的很没意义。&lt;/p&gt;&lt;p&gt;2、有一百万闲钱可以理财的是富翁，富翁纠结的从来是安全，保值，增值。&lt;/p&gt;&lt;p&gt;3、不知道安全性相对高收益相对高的产品的人才会问这样的问题。&lt;/p&gt;&lt;p&gt;4、理财从来没有对错之分，不过不去了解这个市场的理财，随便问问题就很没劲了。&lt;/p&gt;&lt;p&gt;&lt;b&gt;5、我跟以广告贴费什么尽啊。&lt;/b&gt;&lt;/p&gt;&lt;p&gt;6、封贴，看不惯的我也不回应了。&lt;/p&gt;&lt;p&gt;——————————————————————————————————————&lt;/p&gt;&lt;p&gt;再加一句，&lt;/p&gt;&lt;p&gt;如果这个问题是我有1万块，放余额宝划算还是放活期划算。我觉得是个非常好的问题。&lt;/p&gt;&lt;p&gt;如果这个问题是我有1万块，买信托划算还是买银行理财划算，我觉得这是个非常low的问题。&lt;/p&gt;&lt;p&gt;同理，如果这个问题是我有100万，买银行理财划算还是买信托划算，我觉得是个很好的问题&lt;/p&gt;&lt;p&gt;如果马云问我这么多钱，是买银行理财划算还是买信托划算，我依然觉得很low。如果他听我的，我会给他个建议买个信托公司，或者买个银行。&lt;/p&gt;&lt;p&gt;标榜自己是个大学生，问教授二元一次方程怎么解，我只能说没上过大学，他的问题很low。&lt;/p&gt;</textarea>
+
+
+<div class="zh-summary summary clearfix">
+
+1、问这个问题的一定没100万现金。2、问这个问题的一定没学过金融。3、问这个问题的一定不是银行贵宾。4、问这个问题的一定不知道什么是合格投资者。5、问这样的问题真的很low。<b>最后添加，手动置顶</b><b>———————————————————————————…</b>
+
+<a href="/question/67769782/answer/256640848" class="toggle-expand">显示全部</a>
+
+</div>
+
+
+
+<p class="visible-expanded"><a itemprop="url" class="answer-date-link meta-item" data-tooltip="s$t$发布于 昨天 07:32" target="_blank" href="/question/67769782/answer/256640848">编辑于 19:02</a></p>
+
+</div>
+</div>
+<div class="feed-meta">
+<div class="zm-item-meta answer-actions clearfix js-contentActions">
+<div class="zm-meta-panel">
+
+<a href="#" class="meta-item votenum-mobile zm-item-vote-count  js-openVoteDialog">
+<span data-bind-votecount="">524</span><i class="arrow zg-icon"></i>
+</a>
+<div class="zm-votebar" data-za-module="VoteBar">
+<button class="up" aria-pressed="false" title="赞同">
+<i class="icon vote-arrow"></i>
+<span class="count">524</span>
+<span class="label sr-only">赞同</span>
+</button>
+<button class="down" aria-pressed="false" title="反对，不会显示你的姓名">
+<i class="icon vote-arrow"></i>
+<span class="label sr-only">反对，不会显示你的姓名</span>
+</button>
+</div>
+
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-19336359"><i class="z-icon-follow"></i>关注问题</a>
+
+<a href="#" name="addcomment" class="meta-item toggle-comment js-toggleCommentBox">
+<i class="z-icon-comment"></i>288 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide js-thank" data-thanked="false"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+
+
+<span class="phone-actions">
+<a href="#" class="menubutton more-actions meta-item zu-autohide goog-inline-block goog-menu-button" role="button" aria-expanded="false" tabindex="0" aria-haspopup="true" style="user-select: none;"><div class="goog-inline-block goog-menu-button-outer-box"><div class="goog-inline-block goog-menu-button-inner-box"><div class="goog-inline-block goog-menu-button-caption"><i class="zg-icon zg-icon-ellipsis-mobi"></i><span class="hide-text">更多</span></div><div class="goog-inline-block goog-menu-button-dropdown">&nbsp;</div></div></div></a>
+<div class="menu goog-menu goog-menu-vertical zh-answer-more-actions" style="display: none; user-select: none;" role="menu" aria-haspopup="true"><div class="goog-menuitem js-share" role="menuitem" id=":2b" style="user-select: none;"><div class="goog-menuitem-content" style="user-select: none;">分享</div></div><div class="goog-menuseparator" aria-disabled="true" role="separator" id=":2c" style="user-select: none;"></div><div class="goog-menuitem js-collect" role="menuitem" id=":2d" style="user-select: none;"><div class="goog-menuitem-content" style="user-select: none;">收藏</div></div><div class="goog-menuseparator" aria-disabled="true" role="separator" id=":2e" style="user-select: none;"></div><div class="goog-menuitem js-noHelp" role="menuitem" id=":2f" style="user-select: none;"><div class="goog-menuitem-content" style="user-select: none;">没有帮助</div></div><div class="goog-menuseparator" aria-disabled="true" role="separator" id=":2g" style="user-select: none;"></div><div class="goog-menuitem js-report" role="menuitem" id=":2h" style="user-select: none;"><div class="goog-menuitem-content" style="user-select: none;">举报</div></div></div>
+</span>
+
+
+
+<meta name="copyrightStatus" content="1">
+<meta name="disableCopyAvatar" content="">
+
+<span class="zg-bull">•</span>
+
+<a href="/terms#sec-licence-1" target="_blank" class="meta-item copyright">
+作者保留权利
+</a>
+
+
+<button class="meta-item item-collapse js-collapse">
+<i class="z-icon-fold"></i>收起
+</button>
+</div>
+</div>
+<a href="#" class="ignore zu-autohide" name="dislike" data-tooltip="s$b$不感兴趣"></a>
+</div>
+</div>
+</div>
+</div>
+<div class="undo-dislike-options" data-item_id="7">
+此内容将不会在动态中再次显示 <span class="zg-bull">•</span> <a href="#" class="meta-item revert">撤销</a>
+<a href="#" class="ignore zu-autohide close"></a>
+</div>
+</div>
+
+<div class="feed-item folding feed-item-hook feed-item-8
+ 
+" feed-item-p="" data-type="p" id="feed-8" data-za-module="FeedItem" data-za-index="">
+<meta itemprop="ZReactor" data-id="4525315" data-meta="{&quot;source_type&quot;: &quot;topic_acknowledged_article&quot;, &quot;voteups&quot;: 23, &quot;comments&quot;: 7, &quot;source&quot;: [[&quot;topic&quot;, 395]]}">
+<div class="feed-item-inner">
+<div class="avatar">
+<a title="投资" data-hovercard="t$t$19551404" class="zm-item-link-avatar" href="/topic/19551404" target="_blank">
+<img src="https://pic4.zhimg.com/cdadbe013_m.jpg" alt="投资" class="side-topic-avatar">
+</a>
+</div>
+<div class="feed-main">
+<div class="feed-source" data-za-module="FeedSource">
+来自话题: <a href="/topic/19551404" data-hovercard="t$b$19551404" data-token="19551404" data-topicid="395" data-follow="1" data-interest="1" target="_blank" data-za-element-name="Title">投资</a>
+
+</div>
+<div class="feed-content" data-za-module="PostItem" data-za-index="">
+<meta itemprop="post-id" content="4525315">
+<meta itemprop="post-url-token" content="30842064">
+<h2 class="feed-title"><a target="_blank" class="post-link" href="https://zhuanlan.zhihu.com/p/30842064" data-za-element-name="Title">人多的地方不要去，但是这次可能例外</a></h2>
+
+<div class="entry-body post-body js-collapse-body">
+
+
+
+<div class="author-info summary-wrapper">
+<span class="author-link-line">
+<a href="/people/alex-41-18" data-hovercard="p$t$alex-41-18" class="name author-link">Alex</a><span class="icon icon-badge-best_answerer icon-badge" data-tooltip="s$b$优秀回答者"></span></span><span class="badge-summary"><a href="/people/alex-41-18#hilightbadge" target="_blank">投资、理财、基金、金融、银行等 6 个话题优秀回答者</a></span>
+</div>
+
+<div class="zm-item-vote-info" data-votecount="23" data-za-module="VoteInfo">
+
+
+
+<span class="voters text"><a href="#" class="more text"><span class="js-voteCount">23</span>&nbsp;人赞</a></span>
+
+
+</div>
+<div class="post-content" data-author-name="Alex" data-entry-url="https://zhuanlan.zhihu.com/p/30842064">
+<textarea class="content hidden">&lt;img src="https://pic4.zhimg.com/50/v2-92e188c2ea78d00af115012c6a525153_b.jpg" data-rawwidth="1920" data-rawheight="1200" class="origin_image zh-lightbox-thumb" width="1920" data-original="https://pic4.zhimg.com/50/v2-92e188c2ea78d00af115012c6a525153_r.jpg"&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;今天被一个基金刷屏了，有不少人问怎么样，做一下分析。&lt;/p&gt;&lt;p&gt;今年以来，有一家公司却彻底火了，原因是他们卖基金太火爆了，其他基金公司1个月募集5亿，他们却在限购10万的情况下一天卖100亿。&lt;/p&gt;&lt;p&gt;针对这么疯狂的表现，前段时间我已经专门写过一篇文章做了深入分析：&lt;/p&gt;&lt;p&gt;&lt;a href="http://link.zhihu.com/?target=http%3A//mp.weixin.qq.com/s/kckNVgNOQeoN8vxoduAyBw" class=" wrap external" target="_blank" rel="nofollow noreferrer"&gt;最后的上车机会——致敬东方红&lt;i class="icon-external"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;今天，他们要发一个新产品，再次火爆全市场。据最新消息，上午已经75亿了。&lt;/p&gt;&lt;p&gt;在每户限购5万元、总额限购20亿且要比例配售的条款下，比例配售是肯定的了，而且预计比例低于20%。也就是说你买5万元，可能买到的实际金额1万都不到。&lt;/p&gt;&lt;p&gt;同时，也有不少投资者对此现象表示担忧：一个是今年是A股价值投资年，这家公司就是价值投资风格，因此成立最大受益者，一旦市场风格变化，公司业绩可能就会迎来拐点；二是该公司旗下产品持仓重合度高，有抱团取暖的可能，并且一旦市场变化会全军覆没；三是“钟摆理论”、“人多的地方不能去”、“均值回归”，东方红也不可能一直这么红。&lt;/p&gt;&lt;p&gt;对于这些观点，我个人看法：&lt;/p&gt;&lt;p&gt;1、价值投资理念在中国得到广泛认可，目前可能只是一个开始，而不是结束。&lt;/p&gt;&lt;p&gt;2、市场风格可能会变，所以东方红的业绩由好转坏的概率正在不断加大，且阶段性进入低迷期的概率很高，这一点现在买入的投资者要有心理准备；&lt;/p&gt;&lt;p&gt;3、东方红重仓股重合度高，理解为“抱团取暖”不太合适，更多还是体现了团队的理念一致及对于这些公司投资价值的高度认可；&lt;/p&gt;&lt;p&gt;4、东方红业绩波动一定难免，但是个人认为这家公司大概率确实具备长期投资获取超额收益的能力，因此业绩即使某个阶段下滑，但长期还是大概率会弹回来。&lt;/p&gt;&lt;p&gt;看一家公司，要同时看实力和节操。从最近公司的疯狂限购也能看出来，这次新发基金也不是为了圈钱，目前他们要想圈钱太容易了，没必要搞20亿限额。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;今天这个产品是新发，还需要一定时间建仓，因此和买老产品相比有利于规避短期波动。并且3年封闭，在目前市场整体估值不算高的大背景下，对于东方这样的高手来说，相信大概率还是可以跑赢市场，获得相对不错的收益。&lt;/p&gt;&lt;p&gt;对这个产品感兴趣的同学，可以关注公众号：价值发现者（jzfx01），“查看历史消息”, 了解具体信息。&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;</textarea>
+<div class="zh-summary summary clearfix">
+<img src="https://pic4.zhimg.com/50/v2-92e188c2ea78d00af115012c6a525153_200x112.jpg" data-rawwidth="1920" data-rawheight="1200" class="origin_image inline-img zh-lightbox-thumb" data-original="https://pic4.zhimg.com/50/v2-92e188c2ea78d00af115012c6a525153_r.jpg">今天被一个基金刷屏了，有不少人问怎么样，做一下分析。今年以来，有一家公司却彻底火了，原因是他们卖基金太火爆了，其他基金公司1个月募集5亿，他们却在限购10万的情况下一天卖100亿。针对这么疯狂的表现，前段时间我已经专门写过一篇文章做了深入分析：<a href="http://mp.weixin.qq.com/s/kckNVgNOQeoN8vxoduAyBw">…</a>
+
+<a href="https://zhuanlan.zhihu.com/p/30842064" class="toggle-expand">显示全部</a>
+
+</div>
+
+<p class="hidden-default"><a class="post-link entry-link" target="_blank" href="https://zhuanlan.zhihu.com/p/30842064">昨天 13:56</a></p>
+</div>
+</div>
+<div class="feed-meta">
+<div class="zm-item-meta meta clearfix js-contentActions">
+<div class="zm-meta-panel">
+
+<a href="#" class="meta-item votenum-mobile zm-item-vote-count js-openVoteDialog"><span data-bind-votecount="">23</span><i class="zg-icon arrow"></i></a>
+<div class="zm-votebar" data-za-module="VoteBar">
+<button class="up" aria-pressed="false" title="赞">
+<i class="icon vote-arrow"></i>
+<span class="count">23</span>
+<span class="label sr-only">赞</span>
+</button>
+</div>
+
+
+
+
+<a href="#" class="meta-item toggle-comment js-toggleCommentBox">
+<i class="z-icon-comment"></i>7 条评论</a>
+<a href="#" class="meta-item zu-autohide js-share"><i class="z-icon-share"></i>分享</a>
+<span class="zg-bull zu-autohide">•</span>
+<a href="#" class="meta-item zu-autohide js-report">举报</a>
+<span class="zg-bull">•</span>
+<a href="https://zhuanlan.zhihu.com/p/30842064" class="meta-item" target="_blank">去往文章页</a>
+<button class="meta-item item-collapse js-collapse">
+<i class="z-icon-fold"></i>收起
+</button>
+</div>
+
+</div>
+<a href="#" class="ignore zu-autohide" name="dislike" data-tooltip="s$b$不感兴趣"></a>
+</div>
+</div>
+</div>
+</div>
+<div class="undo-dislike-options" data-item_id="8">
+此内容将不会在动态中再次显示 <span class="zg-bull">•</span> <a href="#" class="meta-item revert">撤销</a>
+<a href="#" class="ignore zu-autohide close"></a>
+</div>
+</div>
+
+<div class="feed-item folding feed-item-hook feed-item-9
+ 
+" feed-item-a="" data-type="a" id="feed-9" data-za-module="FeedItem" data-za-index="">
+<meta itemprop="ZReactor" data-id="76829769" data-meta="{&quot;source_type&quot;: &quot;topic_acknowledged_answer&quot;, &quot;voteups&quot;: 567, &quot;comments&quot;: 99, &quot;source&quot;: [[&quot;topic&quot;, 99]]}">
+<div class="feed-item-inner">
+<div class="avatar">
+<a title="互联网" data-hovercard="t$t$19550517" class="zm-item-link-avatar" href="/topic/19550517" target="_blank">
+<img src="https://pic4.zhimg.com/f07808da5625fef3607f8b75b770349f_m.jpg" alt="互联网" class="side-topic-avatar">
+</a>
+</div>
+<div class="feed-main">
+<div class="feed-source" data-za-module="FeedSource">
+来自话题: <a href="/topic/19550517" data-hovercard="t$b$19550517" data-token="19550517" data-topicid="99" data-follow="1" data-interest="1" target="_blank" data-za-element-name="Title">互联网</a>
+
+</div>
+<div class="feed-content" data-za-module="AnswerItem" data-za-index="">
+<meta itemprop="answer-id" content="76829769">
+<meta itemprop="answer-url-token" content="257183267">
+<h2 class="feed-title"><a class="question_link" href="/question/26759276/answer/257183267" target="_blank" data-id="2886619" data-za-element-name="Title">
+如何理解马云说的「把地主杀了，不等于你能富起来」这句话？
+</a></h2>
+<div class="feed-question-detail-item">
+
+<a href="#" class="toggle-expand btn-toggle-question-detail ellipsis js-expandQuestionDetail">用毛时代的思想怎样批判马云所说“地主斗倒...&nbsp;<span>显示问题详情</span></a>
+<div class="question-description zm-editable-content">
+<a href="https://www.zhihu.com/question/45062189?from=profile_question_card" class="internal">用毛时代的思想怎样批判马云所说“地主斗倒了，农民没有富起来”？ - 阿里巴巴集团</a>
+</div>
+
+</div>
+<div class="expandable entry-body">
+<link itemprop="url" href="/question/26759276/answer/257183267">
+<!-- <meta itemprop="answer-id" content="76829769">
+<meta itemprop="answer-url-token" content="257183267"> -->
+
+
+<div class="zm-item-answer-author-info">
+
+<span class="summary-wrapper">
+<span class="author-link-line">
+
+<a class="author-link" data-hovercard="p$t$warmwine" target="_blank" href="/people/warmwine">温酒</a></span><span title="温酒不说谎" class="bio">
+温酒不说谎
+</span>
+</span>
+</div>
+
+<div class="zm-item-vote-info" data-votecount="567" data-za-module="VoteInfo">
+
+
+
+<span class="voters text"><a href="#" class="more text"><span class="js-voteCount">567</span>&nbsp;人赞同</a></span>
+
+
+</div>
+<div class="zm-item-rich-text expandable js-collapse-body" data-resourceid="2886619" data-action="/answer/content" data-author-name="温酒" data-entry-url="/question/26759276/answer/257183267">
+
+<textarea hidden="" class="content">&lt;p&gt;一只狐狸渡过湍急的河水时，被冲到一个深谷中。&lt;/p&gt;&lt;p&gt;他遍体鳞伤，躺在地上一动也不能 动。&lt;/p&gt;&lt;p&gt;一群饥饿的吸血蚊蝇叮满了他的全身。&lt;/p&gt;&lt;p&gt;这时，一个刺猬走了过来，十分可怜他的痛苦， 问需不需要赶开这些害他的蚊蝇。&lt;/p&gt;&lt;p&gt;狐狸回答说：“不用啦，请你不要打扰他们。”&lt;/p&gt;&lt;p&gt;刺猬感到 奇怪：“为什么不要把他们赶跑呢？”&lt;/p&gt;&lt;p&gt;狐狸回答说：&lt;/p&gt;&lt;p&gt;“千万不要，你所见到的这些蚊蝇已吸 足了我的血，不再叮咬我了。&lt;/p&gt;&lt;p&gt;你若替我赶跑他们，那另一些更饥饿的就会来将我所剩的血吸 干。”&lt;/p&gt;&lt;p&gt;——《伊索寓言》&lt;/p&gt;</textarea>
+
+
+<div class="zh-summary summary clearfix">
+
+一只狐狸渡过湍急的河水时，被冲到一个深谷中。他遍体鳞伤，躺在地上一动也不能 动。一群饥饿的吸血蚊蝇叮满了他的全身。这时，一个刺猬走了过来，十分可怜他的痛苦， 问需不需要赶开这些害他的蚊蝇。狐狸回答说：“不用啦，请你不要打扰他们。”刺猬感到 …
+
+<a href="/question/26759276/answer/257183267" class="toggle-expand">显示全部</a>
+
+</div>
+
+
+
+<p class="visible-expanded"><a itemprop="url" class="answer-date-link meta-item" data-tooltip="s$t$发布于 08:50" target="_blank" href="/question/26759276/answer/257183267">编辑于 09:46</a></p>
+
+</div>
+</div>
+<div class="feed-meta">
+<div class="zm-item-meta answer-actions clearfix js-contentActions">
+<div class="zm-meta-panel">
+
+<a href="#" class="meta-item votenum-mobile zm-item-vote-count  js-openVoteDialog">
+<span data-bind-votecount="">567</span><i class="arrow zg-icon"></i>
+</a>
+<div class="zm-votebar" data-za-module="VoteBar">
+<button class="up" aria-pressed="false" title="赞同">
+<i class="icon vote-arrow"></i>
+<span class="count">567</span>
+<span class="label sr-only">赞同</span>
+</button>
+<button class="down" aria-pressed="false" title="反对，不会显示你的姓名">
+<i class="icon vote-arrow"></i>
+<span class="label sr-only">反对，不会显示你的姓名</span>
+</button>
+</div>
+
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-2886619"><i class="z-icon-follow"></i>关注问题</a>
+
+<a href="#" name="addcomment" class="meta-item toggle-comment js-toggleCommentBox">
+<i class="z-icon-comment"></i>98 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide js-thank" data-thanked="false"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+
+
+<span class="phone-actions">
+<a href="#" class="menubutton more-actions meta-item zu-autohide goog-inline-block goog-menu-button" role="button" aria-expanded="false" tabindex="0" aria-haspopup="true" style="user-select: none;"><div class="goog-inline-block goog-menu-button-outer-box"><div class="goog-inline-block goog-menu-button-inner-box"><div class="goog-inline-block goog-menu-button-caption"><i class="zg-icon zg-icon-ellipsis-mobi"></i><span class="hide-text">更多</span></div><div class="goog-inline-block goog-menu-button-dropdown">&nbsp;</div></div></div></a>
+<div class="menu goog-menu goog-menu-vertical zh-answer-more-actions" style="display: none; user-select: none;" role="menu" aria-haspopup="true"><div class="goog-menuitem js-share" role="menuitem" id=":2s" style="user-select: none;"><div class="goog-menuitem-content" style="user-select: none;">分享</div></div><div class="goog-menuseparator" aria-disabled="true" role="separator" id=":2t" style="user-select: none;"></div><div class="goog-menuitem js-collect" role="menuitem" id=":2u" style="user-select: none;"><div class="goog-menuitem-content" style="user-select: none;">收藏</div></div><div class="goog-menuseparator" aria-disabled="true" role="separator" id=":2v" style="user-select: none;"></div><div class="goog-menuitem js-noHelp" role="menuitem" id=":2w" style="user-select: none;"><div class="goog-menuitem-content" style="user-select: none;">没有帮助</div></div><div class="goog-menuseparator" aria-disabled="true" role="separator" id=":2x" style="user-select: none;"></div><div class="goog-menuitem js-report" role="menuitem" id=":2y" style="user-select: none;"><div class="goog-menuitem-content" style="user-select: none;">举报</div></div></div>
+</span>
+
+
+
+<meta name="copyrightStatus" content="1">
+<meta name="disableCopyAvatar" content="">
+
+<span class="zg-bull">•</span>
+
+<a href="/terms#sec-licence-1" target="_blank" class="meta-item copyright">
+作者保留权利
+</a>
+
+
+<button class="meta-item item-collapse js-collapse">
+<i class="z-icon-fold"></i>收起
+</button>
+</div>
+</div>
+<a href="#" class="ignore zu-autohide" name="dislike" data-tooltip="s$b$不感兴趣"></a>
+</div>
+</div>
+</div>
+</div>
+<div class="undo-dislike-options" data-item_id="9">
+此内容将不会在动态中再次显示 <span class="zg-bull">•</span> <a href="#" class="meta-item revert">撤销</a>
+<a href="#" class="ignore zu-autohide close"></a>
+</div>
+</div>
+
+
+</div>
+<a href="javascript:;" id="zh-load-more" data-method="next" class="zg-btn-white zg-r3px zu-button-more" style="">更多</a>
+</div>
+
+</div>
+</div>
+
+
+<div class="zu-main-sidebar" data-za-module="RightSideBar">
+
+
+
+
+<div class="zm-side-section">
+<div class="zm-side-section-inner">
+<div class="zm-side-nav-group">
+<ul class="zm-side-nav" id="zg-sidebar-nav">
+
+<li class="zm-side-nav-li">
+<a class="zm-side-nav-link" href="/collections" data-za-c="collection" data-za-l="sidebar_collections" data-za-a="visit_collections">
+<i class="zg-icon zg-icon-sidenav-fav"></i>
+我的收藏
+
+</a>
+</li>
+
+<li class="zm-side-nav-li">
+<a class="zm-side-nav-link" href="/question/following">
+<i class="zg-icon zg-icon-sidenav-follow"></i>
+我关注的问题
+</a>
+</li>
+<li class="zm-side-nav-li">
+<a class="zm-side-nav-link" href="/question/invited">
+<i class="zg-icon zg-icon-sidenav-invite"></i>
+邀请我回答的问题
+
+</a>
+</li>
+
+
+
+</ul>
+</div>
+<div class="zm-side-nav-group">
+<ul class="zm-side-nav">
+
+
+<li class="zm-side-nav-li rq3-publiceditlink" id="rq3-sidenav-link">
+<a class="zm-side-nav-link" href="/watch">
+<i class="zg-icon zg-icon-sidenav-publicedit"></i>
+公共编辑动态
+<span class="zg-num hidden">0</span>
+</a>
+</li>
+
+<li class="zm-side-nav-li">
+<a class="zm-side-nav-link z-ico-container" href="/community">
+<i class="z-ico-community"></i>
+社区服务中心
+</a>
+</li>
+
+<li class="zm-side-nav-li">
+<a class="zm-side-nav-link z-ico-container" href="/copyright">
+<i class="zg-icon icon icon-copyright"></i>
+版权服务中心
+</a>
+</li>
+
+
+</ul>
+</div>
+
+
+
+</div>
+</div>
+<div class="SidebarSection SidebarListNav zm-side-my-columns">
+<h3>知乎专栏</h3>
+
+<ul class="column-homepage zm-side-nav column-empty">
+<li class="zm-side-nav-li">
+<a class="column-homepage-link column-link zm-side-nav-link" href="http://zhuanlan.zhihu.com/" target="_blank">
+<i class="icon-column-logo sprite-sidebar-icon-column-normal icon-column-logo-active"></i>
+<span class="name">专栏・发现</span>
+</a>
+</li>
+</ul>
+<ul class="zm-side-nav column-list">
+
+</ul>
+<script id="SidebarColumnItem-template" type="text/template">
+
+</script>
+<ul class="zm-side-nav">
+
+</ul>
+</div>
+<div class="SidebarSection SidebarListNav SidebarListNav--noFollowLink">
+<h3><a href="https://www.zhihu.com/lives" class="SidebarListNav-sideLink Link--light" target="_blank">查看全部 »</a>知乎 Live ⚡️</h3>
+<ul class="SidebarListNav-list">
+
+<li class="SidebarListNav-listItem">
+<a class="SidebarListNav-itemLink" href="https://www.zhihu.com/lives/902140558938603520" target="_blank">
+<img class="Avatar SidebarListNav-avatar" src="https://pic4.zhimg.com/c1b4a75b500a354b1b6dfa2b7ddfefaf_s.jpg" srcset="https://pic4.zhimg.com/c1b4a75b500a354b1b6dfa2b7ddfefaf_xs.jpg 2x" alt="心理学教授教你双十一脱单">
+<span class="SidebarListNav-label">
+心理学教授教你双十一脱单
+</span>
+</a>
+</li>
+
+<li class="SidebarListNav-listItem">
+<a class="SidebarListNav-itemLink" href="https://www.zhihu.com/lives/904019625552015360" target="_blank">
+<img class="Avatar SidebarListNav-avatar" src="https://pic2.zhimg.com/v2-bbede6091948a40f817b79cec9e48f35_s.jpg" srcset="https://pic2.zhimg.com/v2-bbede6091948a40f817b79cec9e48f35_xs.jpg 2x" alt="如何看待奥数？如何辨别你家娃是否适合">
+<span class="SidebarListNav-label">
+如何看待奥数？如何辨别你家娃是否适合
+</span>
+</a>
+</li>
+
+<li class="SidebarListNav-listItem">
+<a class="SidebarListNav-itemLink" href="https://www.zhihu.com/lives/909010058812211200" target="_blank">
+<img class="Avatar SidebarListNav-avatar" src="https://pic2.zhimg.com/v2-021647758fadb50a4cdd16fee2675859_s.jpg" srcset="https://pic2.zhimg.com/v2-021647758fadb50a4cdd16fee2675859_xs.jpg 2x" alt="教师招聘都应该注意什么？">
+<span class="SidebarListNav-label">
+教师招聘都应该注意什么？
+</span>
+</a>
+</li>
+
+</ul>
+</div>
+<div class="SidebarSection SidebarListNav js-sidebarRoundtable">
+<h3><a href="/roundtable" class="SidebarListNav-sideLink Link--light">查看全部 »</a>知乎圆桌</h3>
+<ul class="SidebarListNav-list">
+
+<li class="SidebarListNav-listItem">
+
+<a data-follow="rt:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-zengji"><i class="z-icon-follow"></i>关注圆桌</a>
+
+<a class="SidebarListNav-itemLink" href="/roundtable/zengji">
+<img class="Avatar SidebarListNav-avatar" src="https://pic2.zhimg.com/v2-1c0e457dff11aabd647f996e4f30ddad_s.png" srcset="https://pic2.zhimg.com/v2-1c0e457dff11aabd647f996e4f30ddad_xs.png 2x" alt="增肌训练指南" data-hovercard="r$b$zengji">
+<span class="SidebarListNav-label" data-hovercard="r$b$zengji">
+增肌训练指南
+</span>
+
+<span class="SidebarListNav-hint SidebarListNav-hint--hoverHidden">还有 8 天结束</span>
+
+</a>
+</li>
+
+<li class="SidebarListNav-listItem">
+
+<a class="SidebarListNav-itemLink" href="/roundtable/shineikongqi">
+<img class="Avatar SidebarListNav-avatar" src="https://pic3.zhimg.com/v2-8786160588a72db7543eb565c21193e6_s.png" srcset="https://pic3.zhimg.com/v2-8786160588a72db7543eb565c21193e6_xs.png 2x" alt="拯救室内空气" data-hovercard="r$b$shineikongqi">
+<span class="SidebarListNav-label" data-hovercard="r$b$shineikongqi">
+拯救室内空气
+</span>
+
+</a>
+</li>
+
+<li class="SidebarListNav-listItem">
+
+<a class="SidebarListNav-itemLink" href="/roundtable/wangluowenxue">
+<img class="Avatar SidebarListNav-avatar" src="https://pic1.zhimg.com/v2-ff916989d92258880158780879b3e440_s.png" srcset="https://pic1.zhimg.com/v2-ff916989d92258880158780879b3e440_xs.png 2x" alt="网络文学风云录" data-hovercard="r$b$wangluowenxue">
+<span class="SidebarListNav-label" data-hovercard="r$b$wangluowenxue">
+网络文学风云录
+</span>
+
+</a>
+</li>
+
+</ul>
+</div>
+<div class="SidebarSection SidebarListNav">
+<h3><a href="/pub/" class="SidebarListNav-sideLink Link--light" target="_blank">查看全部 »</a>知乎书店</h3>
+<ul class="SidebarListNav-list">
+
+<li class="SidebarListNav-listItem">
+<a class="SidebarListNav-itemLink" href="/publications/weekly/119558094" target="_blank">
+<img class="Avatar SidebarListNav-avatar" src="https://static.zhihu.com/static/revved/img/ebooks/weekly.65279d61.png" srcset="https://static.zhihu.com/static/revved/img/ebooks/weekly@2x.78fb79ac.png">
+<span class="SidebarListNav-label">
+玩世界，享不同：怎样的旅行称得上「会玩」？
+</span>
+
+<span class="SidebarListNav-hint">新上架</span>
+
+</a>
+</li>
+
+<li class="SidebarListNav-listItem">
+<a class="SidebarListNav-itemLink" href="/publications/hour/119557976" target="_blank">
+<img class="Avatar SidebarListNav-avatar" src="https://static.zhihu.com/static/revved/img/ebooks/hour.3d371c99.png" srcset="https://static.zhihu.com/static/revved/img/ebooks/hour@2x.f5499fd8.png">
+<span class="SidebarListNav-label">
+法语有意思：从入门到不放弃
+</span>
+
+</a>
+</li>
+
+<li class="SidebarListNav-listItem">
+<a class="SidebarListNav-itemLink" href="/publications/nacl/119554120" target="_blank">
+<img class="Avatar SidebarListNav-avatar" src="https://static.zhihu.com/static/revved/img/ebooks/nacl.656ec1c4.png" srcset="https://static.zhihu.com/static/revved/img/ebooks/nacl@2x.b5f3a720.png">
+<span class="SidebarListNav-label">
+刑事辩护指导书
+</span>
+
+</a>
+</li>
+
+</ul>
+</div>
+<div class="SidebarSection SidebarListNav">
+<ul class="SidebarListNav-list">
+<li class="SidebarListNav-listItem">
+<a class="SidebarListNav-itemLink DownloadApp-link" href="#">
+<i class="SidebarListNav-avatar sprite-sidebar-icon-zhi"></i>
+<span class="SidebarListNav-label">
+下载 App
+</span>
+</a>
+</li>
+</ul>
+</div>
+
+
+
+<div id="zh-footer" class="zh-footer">
+<div class="content zg-wrap clearfix">
+<ul>
+
+<li><a href="https://liukanshan.zhihu.com" target="_blank">刘看山</a></li>
+
+<li><a href="/question/19581624" target="_blank">知乎指南</a></li>
+<li><a href="javascript:;" id="js-feedback-button">建议反馈</a></li>
+
+<li><a href="/app" target="_blank">移动应用</a></li>
+<li><a href="/careers">加入知乎</a></li>
+<li><a href="/terms" target="_blank">知乎协议</a></li>
+<li><a href="/jubao" target="_blank">举报投诉</a></li>
+<li><a href="/contact">联系我们</a></li>
+
+</ul>
+
+<span class="copy">© 2017 知乎</span>
+
+</div>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+<input type="hidden" name="_xsrf" value="3fcbbe36cd2f7d6720d1a7ec3baec161">
+
+<div class="zh-backtotop" style="display:none"><a data-action="backtotop" data-tooltip="s$r$回到顶部" href="javascript:;" class="btn-backtotop btn-action"><div class="arrow"></div><div class="stick"></div></a></div><div class="copyright-notification"><div class="user-image-container"><img class="user-image" src=""></div><div class="tooltip right noty-tooltip"><div class="tooltip-arrow arrow"> </div><div class="tooltip-inner inner">保留所有权利，禁止转载</div></div></div></body>
+</html>
